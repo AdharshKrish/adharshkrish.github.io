@@ -2,10 +2,12 @@
 
         object-fit: cover;
         position: absolute;
-        transform: matrix(1.07, 0, 0, 1.2, 0,-60);
+        transform: matrix(1.07, 0, 0, 1.4, 0,0);
         z-index: 10;
         transition:all 0.5s 0.5s;
         overflow: hidden;
+        height:650px;
+        width: 93%;
 }
 /* .main-image{
 
@@ -103,6 +105,9 @@
     }
     .right-line{
         width:30%;
+    }
+    #dept-image{
+        width:100%;
     }
 }
 @media screen and (max-width:530px){
