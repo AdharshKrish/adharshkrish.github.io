@@ -52,7 +52,7 @@
         // document.getElementById('dept-image').style.height=screen.height+"px";
         // document.getElementById('dept-image').style.width=screen.width+"px";
         document.getElementById('dept-image').style.zIndex="10";
-        document.getElementById('dept-image').style.transform="matrix(1.07, 0, 0, 1.2, 0,-60)";
+        document.getElementById('dept-image').style.transform="matrix(1.07, 0, 0, 1.3, 0,-60)";
        }
        else{
         document.getElementById('dept-name').style.transform="translateY(0%)";
@@ -68,10 +68,7 @@
 
         document.getElementById('dept-image').style.position="static";
         document.getElementById('dept-image').style.transform="scale(1,1)";
-        if(screen.width>786)
-            document.getElementById('dept-image').style.height="650px";
-        else
-            document.getElementById('dept-image').style.height="800px";
+        document.getElementById('dept-image').style.height="650px";
 
         // document.getElementById('dept-image').style.height=screen.height+"px";
 
