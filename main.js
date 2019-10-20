@@ -4,6 +4,12 @@
     // }
     // document.getElementById('dept-image').style.height=screen.height+"px";
     // document.getElementById('dept-image').style.width=screen.width+"px";
+    document.getElementById('dept-image').style.height="650px";
+        if(screen.width>600)
+            document.getElementById('dept-image').style.width="93%";
+        else
+            document.getElementById('dept-image').style.width="100%";
+
     var d = new Date();
     var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     var date = "";
