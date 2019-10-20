@@ -11,7 +11,7 @@
             if(screen.width>600)
                 document.getElementById('dept-image').style.height="650px";
             else
-                document.getElementById('dept-image').style.height=screen.height+"px";
+                document.getElementById('dept-image').style.height=(screen.height-100)+"px";
 
             if(screen.width>600)
                 document.getElementById('dept-image').style.width="93%";
@@ -70,7 +70,11 @@
 
         document.getElementById('dept-image').style.position="static";
         document.getElementById('dept-image').style.transform="scale(1,1)";
-        document.getElementById('dept-image').style.height="650px";
+        // document.getElementById('dept-image').style.height="650px";
+        if(screen.width>600)
+            document.getElementById('dept-image').style.height="650px";
+        else
+            document.getElementById('dept-image').style.height=screen.height+"px";
         // document.getElementById('dept-image').style.height=screen.height+"px";
 
         if(screen.width>600)
