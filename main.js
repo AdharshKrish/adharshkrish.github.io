@@ -8,7 +8,7 @@
         //     document.getElementById('dept-image').style.width=screen.width*93/100;
         // else
             document.getElementById('dept-image').style.width=screen.width;
-            document.getElementById('dept-image').style.height="650px";
+            document.getElementById('dept-image').style.height="700px";
             if(screen.width>600)
                 document.getElementById('dept-image').style.width="93%";
             else
