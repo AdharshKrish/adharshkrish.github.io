@@ -1,0 +1,120 @@
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body{
+  /* background-color: #F2F2F2; */
+  height: auto;
+}
+
+.foot{
+    background-color: #EBF2F3;
+    /* height: 35vh; */
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+}
+
+
+.footer{
+    /* height: 35vh; */
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-bottom: 12px;
+
+}
+
+.row-footer-1{
+    margin-left: 0;
+    margin-right: 0;
+    /* height: 27vh; */
+}
+
+.nested-footer-2{
+    max-width: 800px;
+    /* height: 8vh; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row-footer-2{
+    margin-left: 0;
+    margin-right: 0;
+    /* height: 8vh; */
+    /* border: 1px solid orange; */
+}
+
+@media (max-width: 991px){
+    .hidden-sm-md{
+        display: none !important;
+    }
+}
+
+.col-footer-1{
+    /* border:1px solid blue; */
+    padding: 1.5em;
+    padding-bottom: 12px;
+}
+
+.col-footer-2{
+    /* border: 1px solid red; */
+    padding-bottom: 1vh;
+}
+
+.google-maps {
+    position: relative;
+    padding-bottom: 75%; /*This is the aspect ratio*/
+    height: 0;
+    overflow: hidden;
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+
+.pp{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-weight:500;
+
+
+}
+
+.social_icon{
+    padding-top: 25px;
+}
+
+.icons{
+    padding-right: 5px;
+}
+
+
+.Rectangle-5 {
+    max-width: 150px;
+    height: 30px;
+    border-radius: 16px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    border: solid 2px #000000;
+    text-align: center;
+    min-width: 130px;
+    margin-bottom: 20px;
+}
+
+@media (min-width:768px) and (max-width:1080px) {
+    .padding_remove {
+        padding-left: 0 !important;
+        margin-left: 0!important;
+    }
+}
+
+
+.col-footer-2 a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid gray;
+
+}
