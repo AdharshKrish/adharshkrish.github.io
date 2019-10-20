@@ -81,9 +81,11 @@
     border-collapse: collapse;
     border:2px solid lightgray;
 }
-/* body{
-    height:2000px;
-} */
+@media (max-width:1300px) {
+    #dept-name{
+        transform:matrix(1.6, 0, 0, 1.6, 100,300);
+    }
+}
 @media (max-width:1000px) {
     #dept-name{
         transform:matrix(1.5, 0, 0, 1.5, 0,300);
@@ -92,6 +94,15 @@
 @media (max-width:786px) {
     #dept-name{
         transform:matrix(1.2, 0, 0, 1.2, 0,300);
+    }
+    #date{
+        font-size: 15px;
+    }
+    .left-line{
+        width:30%;
+    }
+    .right-line{
+        width:30%;
     }
 }
 @media screen and (max-width:530px){
@@ -104,12 +115,7 @@
     #date{
         font-size: 10px;
     }
-    .left-line{
-        width:30%;
-    }
-    .right-line{
-        width:30%;
-    }
+
     .animate_image{
         width:100%;
     }

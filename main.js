@@ -4,12 +4,16 @@
     // }
     // document.getElementById('dept-image').style.height=screen.height+"px";
     // document.getElementById('dept-image').style.width=screen.width+"px";
-    document.getElementById('dept-image').style.height="650px";
-        if(screen.width>600)
-            document.getElementById('dept-image').style.width=screen.width*93/100;
-        else
+        // if(screen.width>600)
+        //     document.getElementById('dept-image').style.width=screen.width*93/100;
+        // else
             document.getElementById('dept-image').style.width=screen.width;
-
+            document.getElementById('dept-image').style.height="650px";
+            if(screen.width>600)
+                document.getElementById('dept-image').style.width="93%";
+            else
+                document.getElementById('dept-image').style.width="100%";
+    
     var d = new Date();
     var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     var date = "";
@@ -30,9 +34,11 @@
         if(screen.width<530)
             document.getElementById('dept-name').style.transform="matrix(1, 0, 0, 1, 0,300)";
         else if(screen.width<786)
-            document.getElementById('dept-name').style.transform="matrix(1.2, 0, 0, 1.2, 300,300)";
+            document.getElementById('dept-name').style.transform="matrix(1.2, 0, 0, 1.2, 0,300)";
         else if(screen.width<1000)
-            document.getElementById('dept-name').style.transform="matrix(1.5, 0, 0, 1.5, 300,300)";
+            document.getElementById('dept-name').style.transform="matrix(1.5, 0, 0, 1.5, 0,300)";
+        else if(screen.width<1300)
+            document.getElementById('dept-name').style.transform="matrix(1.6, 0, 0, 1.6, 100,300)";
         else
             document.getElementById('dept-name').style.transform="matrix(1.8, 0, 0, 1.8, 300,300)";
 
