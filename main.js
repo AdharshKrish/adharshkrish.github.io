@@ -21,7 +21,15 @@
     {
        if(document.documentElement.scrollTop == 0){
 
-        document.getElementById('dept-name').style.transform="matrix(1.9, 0, 0, 1.9, 300,300)";
+        if(screen.width<530)
+            document.getElementById('dept-name').style.transform="matrix(1, 0, 0, 1, 0,300)";
+        else if(screen.width<786)
+            document.getElementById('dept-name').style.transform="matrix(1.2, 0, 0, 1.2, 300,300)";
+        else if(screen.width<1000)
+            document.getElementById('dept-name').style.transform="matrix(1.5, 0, 0, 1.5, 300,300)";
+        else
+            document.getElementById('dept-name').style.transform="matrix(1.8, 0, 0, 1.8, 300,300)";
+
         document.getElementById('dept-name').style.color="white";
 
         document.getElementById('dept-image').style.outline="none";
