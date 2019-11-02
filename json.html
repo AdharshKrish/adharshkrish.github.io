@@ -14,6 +14,7 @@
           var tblRow = "<tr>" + "<td>" + f.firstName + "</td>" +
            "<td>" + f.lastName + "</td>" + "<td>" + f.job + "</td>" + "<td>" + f.roll + "</td>" + "</tr>"
            $(tblRow).appendTo("#userdata tbody");
+document.getElementById("txt").innerHTML=tblRow;
      });
 
    });
@@ -37,6 +38,8 @@
 
        </tbody>
    </table>
+<section id="txt">
+</section>
 
 </div>
 </div>
