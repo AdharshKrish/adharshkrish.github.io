@@ -17,9 +17,24 @@
               border: 1px solid #ddd;
               padding: 8px;
             }
-.intro{
-    background-image: url("./files/01.png");
-}
+            .intro{
+                background-image: url("./files/01.png");
+            }
+
+            .map-responsive{
+                overflow:hidden;
+                padding-bottom:56.25%;
+                position:relative;
+                height:0;
+            }
+            .map-responsive iframe{
+                left:0;
+                top:0;
+                height:100%;
+                width:100%;
+                position:absolute;
+            }
+            
             #customers tr:nth-child(even){background-color: #f2f2f2;}
 
             #customers tr:hover {background-color: #ddd;}
@@ -75,7 +90,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>ICICCAS2020</title>
+    <title>ML Workshop</title>
 
     <!-- css -->
     <link rel="stylesheet" href="./files/bootstrap.min.css">
@@ -187,7 +202,7 @@
 
                     <h3 class="section-title">About The Department</h3>
 
-                    <p align="justify">The Department aims at providing high quality training to students. In order to maintain the standard of education, the Department constantly upgrades the academic syllabi so as to keep the students well trained to deal with changing trends in the field of Computer Science and Engineering. The Department offers B.Tech. (CSE),M.Tech. (Distributed Computing), M.Tech. (Information Security), MCA and Ph.D. program . The Department places emphasis on Human- Computer Interaction, Distributed and Parallel Computing, Data Science Essentials, Deep Learning, Machine Learning, Mobile App Development, Embedded Systems, Information Security, Ethical Hacking, Cloud and Big Data Security and several other recent topics. The students of the Department have placement and internship offers in major companies such as TCS, HCL, HP, UNISYS, QUALCOM, ZOHO, Nature Soft, NAL, ISRO, NLC, IGCAR etc. The Department regularly organizes a series of lectures by academicians and professionals of the highest repute, which lay stress on the latest innovative technologies in the field of Computer Science and Engineering and Information Technology. <a href="http://cse.pec.edu/" style="color: coral; font-weight: bold"> More info...</a></p>
+                
                 </div>
                 
         </div> -->
@@ -247,97 +262,16 @@
 <br> <br> 
       
         <section id="workshop" class="section partner" style="background: linear-gradient(to bottom, #c6ffdd, #fbd786, #f7797d);">
-        <div class="container">
-            <!-- <div class="row">
-                <div class="col-md-12">
-                    <h3 class="section-title" style="color:black;">About Workshop</h3>
-                </div>
-            </div> -->
-            <div class="row">
-                <div class="col-md-12 col-sm-12">                   
-                       <h2 style="text-align: center; color:black;text-shadow: 2px 2px 5px purple;">Trainer</h2>
-                        <h4 style="text-align: center;color:black;">Dr.Baskar, Senior Design Engineer</h4>
-                        <!-- <p style="text-align: center;color:black;font-weight: 500"> Pondicherry Engineering College</p> -->
-                    
-                </div>
-                <!-- <div class="col-md-4 col-sm-4">                   
-                        <h2 style="text-align: center;color:black; text-shadow: 2px 2px 5px purple;">Patron</h2>
-                        <h4 style="text-align: center;color:black;">Dr.R.Manoharan, Professor &amp; Head</h4>
-                        <p style="text-align: center;color:black; font-weight: 500"> Department of CSE <br>Pondicherry Engineering College</p>
-                </div>
-                <div class="col-md-4 col-sm-6">                   
-                       <h2 style="text-align: center;color:black;text-shadow: 2px 2px 5px purple; ">Chairman</h2>
-                        <h4 style="text-align: center;color:black;">Dr.K.Vivekanandan, Registrar &amp; Dean(Students)</h4>
-                        <p style="text-align: center;color:black; font-weight: 500"> Department of CSE <br>Pondicherry Engineering College</p>
-                    
-                </div> -->
-            </div>  
-            <br> 
-            <div class="row">
-            <div class="col-md-12">
-                    <h3 class="section-title" style="color:black; ">Contents</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-5"> 
-                     <ul>
-                        <li style="color:black;"> Module 1</li>
-                         <li class="list_mystyle">Introduction to machine learning.</li>
-                         <li class="list_mystyle">Application of machine learning.</li>
-                             <ul>
-                                <li class="list_mystyle">Supervised vs unsupervised learning.</li>
-                                <li class="list_mystyle">Python libraries suitablr for machine learning.</li>
-                             </ul>                              
-                    </ul> 
-                    
-                </div>
-                
-                <div class="col-sm-4">
-                    <ul>
-                        <li style="color:black;">Module 2</li>                       
-                        <li class="list_mystyle">Regression</li>
-                        <ul>
-                            <li class="list_mystyle">Linear regression</li>
-                            <li class="list_mystyle">Non-linear regression</li>
-                        </ul>
-                        <li class="list_mystyle">Model evaluation method</li> 
-                    </ul>
-                    
-                </div>
-                
-                <div class="col-sm-3">
-                    <ul>
-                        <li style="color:black;">Module 3</li>
-                        <li class="list_mystyle">Classification</li>
-                        <li class="list_mystyle">K-nearest neighbour</li>
-                        <li class="list_mystyle">Decision trees</li>
-                        <li class="list_mystyle">Logistic Regression</li>
-                        <li class="list_mystyle">Support vectorv machines</li>
-                        <li class="list_mystyle">Model evaluation</li>
-                    </ul>                       
-                </div>        
-           
-                <div class="col-sm-5">
-                     
-                    <ul>
-                        <li style="color:black;">Module 4</li>
-                        <li class="list_mystyle">Unsupervised learning</li>
-                        <li class="list_mystyle">K-means clustering</li>
-                        <li class="list_mystyle">Hierarchical clustering</li>
-                        <li class="list_mystyle">Density-based clustering</li>
-                    </ul>                   
-                </div>               
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                <h3 class="section-title">About Machine Learning</h3>
 
-                <div class="col-sm-5">    
-                    <ul>
-                        <li style="color:black;">Module 5</li>
-                            <li class="list_mystyle">Recommender systems</li>
-                            <li class="list_mystyle">Content-based recommender systems</li>
-                            <li class="list_mystyle">Collaborative Filtering</li>
-                    </ul>
-                </div>
-            </div>
-    </div></section>   
+            <p align="justify">Machine learning (ML) is the scientific study of algorithms and statistical models that computer systems use to perform a specific task without using explicit instructions, relying on patterns and inference instead. It is seen as a subset of artificial intelligence. Machine learning algorithms build a mathematical model based on sample data, known as "training data", in order to make predictions or decisions without being explicitly programmed to perform the task. Machine learning algorithms are used in a wide variety of applications, such as email filtering and computer vision, where it is difficult or infeasible to develop a conventional algorithm for effectively performing the task.</p>
+
+            <p align="justify">Machine learning is closely related to computational statistics, which focuses on making predictions using computers. The study of mathematical optimization delivers methods, theory and application domains to the field of machine learning. Data mining is a field of study within machine learning, and focuses on exploratory data analysis through unsupervised learning. In its application across business problems, machine learning is also referred to as predictive analytics.</p>
+            </div></div></div>
+        </section>   
         
         <br> <br>
         
@@ -366,6 +300,99 @@
             
         <section id="overview" class="section faq" style="background:  linear-gradient(to bottom, #eacda3, #d6ae7b);">
             <div class="container">
+                <!-- <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="section-title" style="color:black;">About Workshop</h3>
+                    </div>
+                </div> -->
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">                   
+                           <h2 style="text-align: center; color:black;text-shadow: 2px 2px 5px purple;">Trainer</h2>
+                            <h4 style="text-align: center;color:black;">Dr.Baskar, Senior Design Engineer</h4>
+                            <!-- <p style="text-align: center;color:black;font-weight: 500"> Pondicherry Engineering College</p> -->
+                        
+                    </div>
+                    <!-- <div class="col-md-4 col-sm-4">                   
+                            <h2 style="text-align: center;color:black; text-shadow: 2px 2px 5px purple;">Patron</h2>
+                            <h4 style="text-align: center;color:black;">Dr.R.Manoharan, Professor &amp; Head</h4>
+                            <p style="text-align: center;color:black; font-weight: 500"> Department of CSE <br>Pondicherry Engineering College</p>
+                    </div>
+                    <div class="col-md-4 col-sm-6">                   
+                           <h2 style="text-align: center;color:black;text-shadow: 2px 2px 5px purple; ">Chairman</h2>
+                            <h4 style="text-align: center;color:black;">Dr.K.Vivekanandan, Registrar &amp; Dean(Students)</h4>
+                            <p style="text-align: center;color:black; font-weight: 500"> Department of CSE <br>Pondicherry Engineering College</p>
+                        
+                    </div> -->
+                </div>  
+                <br> 
+                <div class="row">
+                <div class="col-md-12">
+                        <h3 class="section-title" style="color:black; ">Contents</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-5"> 
+                         <ul>
+                            <li style="color:black;"> Module 1</li>
+                             <li class="list_mystyle">Introduction to machine learning.</li>
+                             <li class="list_mystyle">Application of machine learning.</li>
+                                 <ul>
+                                    <li class="list_mystyle">Supervised vs unsupervised learning.</li>
+                                    <li class="list_mystyle">Python libraries suitablr for machine learning.</li>
+                                 </ul>                              
+                        </ul> 
+                        
+                    </div>
+                    
+                    <div class="col-sm-4">
+                        <ul>
+                            <li style="color:black;">Module 2</li>                       
+                            <li class="list_mystyle">Regression</li>
+                            <ul>
+                                <li class="list_mystyle">Linear regression</li>
+                                <li class="list_mystyle">Non-linear regression</li>
+                            </ul>
+                            <li class="list_mystyle">Model evaluation method</li> 
+                        </ul>
+                        
+                    </div>
+                    
+                    <div class="col-sm-3">
+                        <ul>
+                            <li style="color:black;">Module 3</li>
+                            <li class="list_mystyle">Classification</li>
+                            <li class="list_mystyle">K-nearest neighbour</li>
+                            <li class="list_mystyle">Decision trees</li>
+                            <li class="list_mystyle">Logistic Regression</li>
+                            <li class="list_mystyle">Support vectorv machines</li>
+                            <li class="list_mystyle">Model evaluation</li>
+                        </ul>                       
+                    </div>        
+               
+                    <div class="col-sm-5">
+                         
+                        <ul>
+                            <li style="color:black;">Module 4</li>
+                            <li class="list_mystyle">Unsupervised learning</li>
+                            <li class="list_mystyle">K-means clustering</li>
+                            <li class="list_mystyle">Hierarchical clustering</li>
+                            <li class="list_mystyle">Density-based clustering</li>
+                        </ul>                   
+                    </div>               
+    
+                    <div class="col-sm-5">    
+                        <ul>
+                            <li style="color:black;">Module 5</li>
+                                <li class="list_mystyle">Recommender systems</li>
+                                <li class="list_mystyle">Content-based recommender systems</li>
+                                <li class="list_mystyle">Collaborative Filtering</li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+
+
+            <!-- <div class="container">
              <div class="row">
             <div class="col-md-12">
                     <h3 class="section-title">Important Instructions</h3>
@@ -432,7 +459,7 @@
                     </ul>
                  </div>
             </div>
-                </div>
+                </div> -->
                    </section>
 
     <section id="puducherry" class="section photos">
@@ -495,10 +522,12 @@
                         <p align="justify">Rethinavelan.R, Joint Secretary <br> Phone: +91-9489947411</p>
                     </address>
                 </div>               
-                <div class="col-sm-9">
+                <div class="map-responsive">
                     <!--  <iframe src="./files/maps.html" padding-left="150px" width="100%" height="650" frameborder="0" style="border:0" allowfullscreen=""></iframe> --> 
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.459053517937!2d79.8546625145673!3d12.011885591490566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a536446022cfb0b%3A0x5c0d300c8187a76b!2sPondicherry%20Engineering%20College!5e0!3m2!1sen!2sin!4v1578729344438!5m2!1sen!2sin" 
                     width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    <!-- <iframe src="https://maps.google.com/maps?q=pondicherry%20engineering%20college&t=&z=13&ie=UTF8&iwloc=&output=embed" width="400" height="280" frameborder="0" style="border:0"></iframe> -->
+
                 </div>
             </div>
         </div>
