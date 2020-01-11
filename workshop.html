@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)http://iciccas2020.pec.edu/ -->
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+
+        <style>
+            
+                #customers {
+              font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+              border-collapse: collapse;
+              align-self: center;
+            }
+
+            #customers td, #customers th {
+              border: 1px solid #ddd;
+              padding: 8px;
+            }
+.intro{
+    background-image: url("./files/01.png");
+}
+            #customers tr:nth-child(even){background-color: #f2f2f2;}
+
+            #customers tr:hover {background-color: #ddd;}
+
+            #customers th {
+              padding-top: 12px;
+              padding-bottom: 12px;
+              text-align: left;
+              background-color: #000000;              
+              color: white;
+            }
+            
+            .list_mystyle
+            {
+                font-family: "Georgia", Times, serif; 
+                font-size: 14px; 
+                color: black;
+                 
+                font-weight: normal; 
+                list-style-type:none;
+            }
+            
+            .list_mystyle1
+            {
+                font-family: "Georgia", Times, serif; 
+                font-size: 14px; 
+                color: black;
+                font-weight: normal; 
+                list-style-type:none;
+            }
+                
+            .btn btn-white:hover {background-color: #e7e7e7;} 
+            
+            .blink-text
+            {
+                color: #000;
+                font-weight: bold;
+                font-size: 2rem;
+                animation: blinkingText 2s infinite;
+	       }
+	
+            @keyframes blinkingText
+            {
+                0%		{ color: #10c018;}
+                25%		{ color: #1056c0;}
+                50%		{ color: #ef0a1a;}
+                75%		{ color: #254878;}
+                100%	{ color: #04a1d5;}	
+            }
+            
+    </style>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ICICCAS2020</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./files/bootstrap.min.css">
+    <link rel="stylesheet" href="./files/main.css">
+</head>
+<body data-spy="scroll" data-target="#site-nav">
+    <nav id="site-nav" class="navbar navbar-fixed-top navbar-custom">
+        <div class="container">
+            <div class="navbar-header">
+
+                <!-- logo -->
+                <div class="site-branding">
+                    <a class="logo" href="http://www.pec.edu">
+                        
+                        <!-- logo image  -->
+                        <!-- <img src="./files/t3.png" alt="tequip"> -->
+                        <img src="./files/pec.png" style="height:50px" alt="Logo" >
+
+                     <!-- logo  ICICCAS'20 -->
+                    </a>
+                </div>
+
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div><!-- /.navbar-header -->
+
+            <div class="collapse navbar-collapse" id="navbar-items">
+                <ul class="nav navbar-nav navbar-right">
+
+                    <!-- navigation menu -->
+                    <!-- <li class="active"><a data-scroll="" href="http://iciccas2020.pec.edu/#site-header">About Cybrus</a> </li> -->
+                    <li><a data-scroll="" href="http://iciccas2020.pec.edu/#cybyrus">About Cybrus</a> </li>
+                    <li><a data-scroll="" href="http://iciccas2020.pec.edu/#college">About College</a></li>
+                    <li><a data-scroll="" href="http://iciccas2020.pec.edu/#members">About Workshop</a></li>
+                    <!-- <li><a data-scroll href="#">Sponsorship</a></li> -->
+                    <li><a data-scroll="" href="http://iciccas2020.pec.edu/#facts">Date and Venue</a></li>
+                     <li><a data-scroll="" href="http://iciccas2020.pec.edu/#dates">Fee Details</a></li>
+                     <li><a data-scroll="" href="http://iciccas2020.pec.edu/#register">Instructor Details</a></li>
+                     <li><a data-scroll="" href="http://iciccas2020.pec.edu/#submission">Overview</a></li>
+                    <li><a data-scroll="" href="http://iciccas2020.pec.edu/#contact">Contact</a></li>                    
+                     <!-- <li><a data-scroll="" href="http://iciccas2020.pec.edu/#guide">Registration</a></li> -->
+                    <li><a data-scroll="" href="http://iciccas2020.pec.edu/#photos">Explore Puducherry</a></li>
+                    <!-- <li><a data-scroll="" href="http://iciccas2020.pec.edu/#contact">Contact</a></li> -->
+                
+                </ul>
+            </div>
+        </div><!-- /.container -->
+    </nav>
+
+    <header id="site-header" class="site-header valign-center"> 
+        
+        <div class="intro">          
+
+            <h2 style="font-family: Georgia, Times,serif"> January 30 &amp; 31, 2020</h2>
+            <br>            
+            <h1 style="font-family: Linotte, Times,sans-serif;text-shadow: 2px 2px 8px rgb(76, 31, 238);">Machine Learning with Python </h1>
+            <!-- <h1 style="font-family: Overpass, Times,serif;text-shadow: 2px 2px 8px #FF00FF;">  Innovations and Challenges in Computing, Analytics and Security <br> (ICICCAS-2020)</h1> -->
+            <br>
+            <p style="font-family: Georgia, Times,serif; text-shadow: 2px 2px 8px rgb(76, 31, 238);">  Organized By <br> Department of Computer Science and Engineering <br> Pondicherry Engineering College</p>
+            <br><br><br><br>        
+            <a class="btn blink-text" style="font-family: Georgia, Times, serif; border-radius: 12px; background-color: rgb(107, 68, 248); font-size: 14px; font-weight:bold;" href="https://docs.google.com/forms/d/e/1FAIpQLSebzrwIgfPUs9v6u_08Z8EjUuZyLsxyDUdFrQBM3zCMvpEDAA/viewform"> Register </a>
+        
+        </div>
+    </header>
+
+    <section id="college" class="section about">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+
+                    <h3 class="section-title">About The College</h3>
+
+                    <p align="justify">Pondicherry Engineering College is an Institution promoted and fully funded by the Government of Puducherry. The College was started in 1984. It is an autonomous Institution for the purposes of administration, staff recruitment and College development and is managed by a Board of Governors. The College has been growing from strength to strength since its inception. Pondicherry Engineering College is a partner Institute in TEQIP-III , which aims at Twinning Arrangements to Build Capacity and Improve Performance of Participating Institutes. PEC is&nbsp;ranked&nbsp;76&nbsp;in Engineering Category by&nbsp;NIRF India Rankings 2019.  <a href="http://www.pec.edu/" style="color: coral; font-weight: bold"> More info...</a></p>
+
+
+                </div><!-- /.col-sm-6 -->
+
+                <div class="col-sm-6">
+
+                    <figure>
+                        <img alt="" class="img-responsive" style="width: 600px; height: 300px; box-shadow: 10px 10px 5px grey;" src="./files/pec-flagpost view.jpeg">
+                    </figure>
+                    <!-- <h3 class="section-title multiple-title">About The Conference</h3>
+
+                    <p align="justify">The International Conference on Innovations and Challenges in Computing, Analytics and Security-2020 is for researchers, professionals, students, academicians and professionals to gain an insight in the recent advances, new techniques and applications in the field of Computing, Data Analytics and Security. This Conference is organized by the Department of Computer Science and Engineering, Pondicherry Engineering College and is sponsored by TEQIP III NPIU (a Unit of the Ministry of Human Resource Development, India). The conference mainly focuses on three important fields of computer science and engineering namely Computing, Analytics and Security.</p>
+
+                    <ul class="list-arrow-right">
+
+                        <li style="text-align: justify">Computing: To enhance the knowledge about the latest Computing technologies pertaining to Cloud computing, Machine Learning, Image Processing and Internet of Things for social development and problem solving.</li>
+                        <li style="text-align: justify">Analytics: To gain an insight into the methods and techniques for analyzing data to convert information to useful knowledge that could help us understand our world better and enable us to make better decisions. </li> 
+                        <li style="text-align: justify">Security: To raise an awareness and understanding on the issues involved in network, privacy and information security with the increase in the scale of commercial activities over different networked systems and the shift from traditional Internet-based applications to newly emerging ubiquitous services.</li>                       
+                    
+                    </ul> -->
+
+                </div>
+            </div><!-- /.row -->
+            <br>
+            <!-- <div class="row">
+                
+                <div class="col-sm-6">
+                    <figure>
+                        <img alt="" class="img-responsive" style="width: 700px; height: 400px; box-shadow: 10px 10px 5px grey;" src="./files/cse (1).jpg">
+                    </figure>
+
+                </div>
+                <div class="col-sm-6">
+
+                    <h3 class="section-title">About The Department</h3>
+
+                    <p align="justify">The Department aims at providing high quality training to students. In order to maintain the standard of education, the Department constantly upgrades the academic syllabi so as to keep the students well trained to deal with changing trends in the field of Computer Science and Engineering. The Department offers B.Tech. (CSE),M.Tech. (Distributed Computing), M.Tech. (Information Security), MCA and Ph.D. program . The Department places emphasis on Human- Computer Interaction, Distributed and Parallel Computing, Data Science Essentials, Deep Learning, Machine Learning, Mobile App Development, Embedded Systems, Information Security, Ethical Hacking, Cloud and Big Data Security and several other recent topics. The students of the Department have placement and internship offers in major companies such as TCS, HCL, HP, UNISYS, QUALCOM, ZOHO, Nature Soft, NAL, ISRO, NLC, IGCAR etc. The Department regularly organizes a series of lectures by academicians and professionals of the highest repute, which lay stress on the latest innovative technologies in the field of Computer Science and Engineering and Information Technology. <a href="http://cse.pec.edu/" style="color: coral; font-weight: bold"> More info...</a></p>
+                </div>
+                
+        </div> -->
+
+        <div class="row" id="cybyrus">
+            <br>
+            <br>
+            <br>
+            <br>
+                <br>
+            
+            <div class="col-sm-6">
+                
+                <figure>
+                    <img alt="" class="img-responsive" style="width: 700px; height: 400px; box-shadow: 10px 10px 5px grey;" src="./files/poster.jpg">
+                </figure>
+
+            </div><!-- /.col-sm-6 -->
+            <div class="col-sm-6">
+
+                <h3 class="section-title">About Cybyrus</h3>
+
+                <p align="justify">Cybyrus is a national level symposium conducted by the vibrant students of the Department of Computer Science and Engineering, Pondicherry Engineering College.Every year we relaese the department magazine which exhibits various technical and non-technical ideas of building engineering students of our department.Students all over India get to participate in this event.</p>
+                <h4 class="section-title">Message from the co-ordinator</h4>
+                <p align="justify">I am extremely gratified that the students of this prestigious department are on the run of conducting this national level symposium. These activities enable the students to bring out the hidden talents in them, cultivate the qualities of better social understanding and realize the essence of team work.I wish all success to make this occation a memorable one.</p>
+            </div>
+            
+    </div>
+            <!-- /.container -->
+    </div></section>
+    <br>
+    <br>
+    <br>
+    <section id="facts" class="section bg-image-1 facts text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <i class="ion-ios-calendar"></i>
+                    <h3>2020<br>Jan 30 &amp; 31</h3>
+                
+                </div>
+                <div class="col-sm-6">
+
+                    <i class="ion-ios-location"></i>
+                    <h3>Pondicherry Engineering College</h3>
+                
+                </div>
+                <!-- <div class="col-sm-3">
+
+                    <i class="ion-pricetags"></i>
+                    <h3>250<br>Tickets</h3>
+                
+                </div> -->
+            </div><!-- row -->
+        </div><!-- container -->
+    </section>
+<br> <br> 
+      
+        <section id="members" class="section partner" style="background: linear-gradient(to bottom, #c6ffdd, #fbd786, #f7797d);">
+        <div class="container">
+            <!-- <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title" style="color:black;">About Workshop</h3>
+                </div>
+            </div> -->
+            <div class="row">
+                <div class="col-md-12 col-sm-12">                   
+                       <h2 style="text-align: center; color:black;text-shadow: 2px 2px 5px purple;">Trainer</h2>
+                        <h4 style="text-align: center;color:black;">Dr.Baskar,Senior Design Engineer</h4>
+                        <!-- <p style="text-align: center;color:black;font-weight: 500"> Pondicherry Engineering College</p> -->
+                    
+                </div>
+                <!-- <div class="col-md-4 col-sm-4">                   
+                        <h2 style="text-align: center;color:black; text-shadow: 2px 2px 5px purple;">Patron</h2>
+                        <h4 style="text-align: center;color:black;">Dr.R.Manoharan, Professor &amp; Head</h4>
+                        <p style="text-align: center;color:black; font-weight: 500"> Department of CSE <br>Pondicherry Engineering College</p>
+                </div>
+                <div class="col-md-4 col-sm-6">                   
+                       <h2 style="text-align: center;color:black;text-shadow: 2px 2px 5px purple; ">Chairman</h2>
+                        <h4 style="text-align: center;color:black;">Dr.K.Vivekanandan, Registrar &amp; Dean(Students)</h4>
+                        <p style="text-align: center;color:black; font-weight: 500"> Department of CSE <br>Pondicherry Engineering College</p>
+                    
+                </div> -->
+            </div>  
+            <br> 
+            <div class="row">
+            <div class="col-md-12">
+                    <h3 class="section-title" style="color:black; ">Contents</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-5"> 
+                     <ul>
+                        <li style="color:black;"> Module 1</li>
+                         <li class="list_mystyle">Introduction to machine learning.</li>
+                         <li class="list_mystyle">Application of machine learning.</li>
+                             <ul>
+                                <li class="list_mystyle">Supervised vs unsupervised learning.</li>
+                                <li class="list_mystyle">Python libraries suitablr for machine learning.</li>
+                             </ul>                              
+                    </ul> 
+                    
+                </div>
+                
+                <div class="col-sm-4">
+                    <ul>
+                        <li style="color:black;">Module 2</li>                       
+                        <li class="list_mystyle">Regression</li>
+                        <ul>
+                            <li class="list_mystyle">Linear regression</li>
+                            <li class="list_mystyle">Non-linear regression</li>
+                        </ul>
+                        <li class="list_mystyle">Model evaluation method</li> 
+                    </ul>
+                    
+                </div>
+                
+                <div class="col-sm-3">
+                    <ul>
+                        <li style="color:black;">Module 3</li>
+                        <li class="list_mystyle">Classification</li>
+                        <li class="list_mystyle">K-nearest neighbour</li>
+                        <li class="list_mystyle">Decision trees</li>
+                        <li class="list_mystyle">Logistic Regression</li>
+                        <li class="list_mystyle">Support vectorv machines</li>
+                        <li class="list_mystyle">Model evaluation</li>
+                    </ul>                       
+                </div>        
+           
+                <div class="col-sm-5">
+                     
+                    <ul>
+                        <li style="color:black;">Module 4</li>
+                        <li class="list_mystyle">Unsupervised learning</li>
+                        <li class="list_mystyle">K-means clustering</li>
+                        <li class="list_mystyle">Hierarchical clustering</li>
+                        <li class="list_mystyle">Density-based clustering</li>
+                    </ul>                   
+                </div>               
+
+                <div class="col-sm-5">    
+                    <ul>
+                        <li style="color:black;">Module 5</li>
+                            <li class="list_mystyle">Recommender systems</li>
+                            <li class="list_mystyle">Content-based recommender systems</li>
+                            <li class="list_mystyle">Collaborative Filtering</li>
+                    </ul>
+                </div>
+            </div>
+    </div></section>   
+        
+        <br> <br>
+        
+          <section id="dates" class="section faq" style="background:linear-gradient(to bottom, #ad5389, #3c1053);;">
+         <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title" style="color:white">Fee Details</h3>
+                </div>
+            </div>
+        
+        <table id="customers" align="center">
+  <tbody><tr>
+    <th style="text-align: center">Description</th>
+    <th style="text-align: center">Fee</th>
+    </tr>    
+  <tr>
+    <td style="color:black;">Hands on workshop</td>
+    <td style="color:black;">499/-</td>    
+  </tr>  
+</tbody></table>
+       
+ </div></section>
+        
+          
+            
+        <section id="guide" class="section faq" style="background:  linear-gradient(to bottom, #eacda3, #d6ae7b);">
+            <div class="container">
+             <div class="row">
+            <div class="col-md-12">
+                    <h3 class="section-title">Important Instructions</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <ul>
+                        <li>Author's Guideline</li>
+                        <li class="list_mystyle1">At least one author of each accepted paper must be registered for the conference to appear in the proceedings and be scheduled for presentation</li>
+                        <li class="list_mystyle1">For "Fee Structure" kindly refer the Registration Link</li>
+                        <li class="list_mystyle1">Send the paper in .doc/.docx Format </li>
+                        <li class="list_mystyle1">Refer "Sample Paper template” from the conference website.</li>
+                        <li class="list_mystyle1">All participants are required to submit registration form and payment proof in compressed (zip) format via email to iciccas2020@pec.edu</li>
+                    </ul>
+                </div>                
+                 <div class="col-sm-4">
+                    <ul>
+                        <li>Important Note</li>
+                        <li class="list_mystyle1">Participants MUST bear all banking charges.</li>
+                        
+                        <li class="list_mystyle1">Registration fees do not include accommodation and travel expenses.</li>
+                        <li class="list_mystyle1">All accepted and presented papers will be published in conference proceedings with ISBN number.</li>
+                        <li class="list_mystyle1">All high quality research papers will be considered for publication in UGC / SCOPUS /SCI Indexed Journals with additional charges.</li>
+                        <li class="list_mystyle1">No refund will be made after the completion of Registration Process</li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <ul>
+                        <li>Fee Inclusions</li>
+                        <li class="list_mystyle1">Author/ Co-Author Registration Fee includes:</li>                        
+                    </ul>
+                    <ol>
+                        <li class="list_mystyle1" style="list-style-type: decimal;">Conference Accessories/Kits</li>
+                        <li class="list_mystyle1" style="list-style-type: decimal;">Badge</li>
+                        <li class="list_mystyle1" style="list-style-type: decimal;">Conference Proceedings</li>
+                        <li class="list_mystyle1" style="list-style-type: decimal;">Certificates for Author and Co-Author (Only Two)</li>
+                        <li class="list_mystyle1" style="list-style-type: decimal;">Lunch</li>
+                        <li class="list_mystyle1" style="list-style-type: decimal;">Coffee Breaks</li>
+                        <li class="list_mystyle1" style="list-style-type: decimal;">Participation in the Technical Program</li>
+                    </ol>
+                </div>
+                   </div>  <br>  
+             <div class="row">
+                <div class="col-sm-6">
+                    <ul>
+                    <li>Do's</li>
+                        <li class="list_mystyle1">Read the “Instructions” of the conference carefully.</li>
+                        <li class="list_mystyle1">Send only Original Research Contributions.</li>
+                        
+                        <li class="list_mystyle1">Do visit the official conference website (only) and use the official mail id of the conference for all communication and latest information. (Refresh the webpage for any update)</li>
+                        <li class="list_mystyle1">All conference notifications will be communicated by registered E-mail only.</li>                    
+                    
+                    </ul>
+                 </div>
+                 <div class="col-sm-6">
+                    <ul>
+                    <li>Dont's</li>
+                        <li class="list_mystyle1">Do not send papers with high plagiarism.</li>
+                        <li class="list_mystyle1"> Do not book your travel and accommodation before taking the “Conference Schedule” mail from our conference coordinator. </li>
+                        <li class="list_mystyle1">The organizer will not provide any financial loss for travel cancellation/travel rescheduling due to conference rescheduling.</li>
+                        <li class="list_mystyle1">No TA/DA will be provided for this conference.</li>
+                        <li class="list_mystyle1">Last minute requests for Video Conferencing will not be permitted.</li>
+                    </ul>
+                 </div>
+            </div>
+                </div>
+                   </section>
+
+    <section id="photos" class="section photos">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Explore Puducherry</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="grid">                        
+                        <li class="grid-item grid-item-sm-6"> 
+                             <img alt="" class="img-responsive center-block" src="./files/aurovil.jpg"> 
+                        </li>
+
+                        <li class="grid-item grid-item-sm-3">                            
+                            <img alt="" class="img-responsive center-block" src="./files/church.jpg"> 
+                        </li>
+                        
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="./files/gandhi.jpg">
+                        </li>
+
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="./files/top.jpg">
+                        </li>
+
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="./files/park.jpg">
+                        </li>
+
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="./files/temple.jpg">
+                        </li>
+
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="./files/rock.jpg">
+                        </li>
+                    
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="./files/university.jpg">
+                        </li>
+                    </ul>
+                </div>
+            </div>            
+        </div>
+    </section>
+
+    <section id="contact" class="section location">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h3 class="section-title">Event Location</h3>
+                    <address>
+                       <p>Pondicherry Engineering College</p>
+                        
+                        <h3 class="section-title">Contact<br><span style="font-size: 10px;">(for accommodation)</span></h3>
+                        <p align="justify">Aruldass.T, Secretary <br> Phone: +91-9042322618</p>
+                        <p align="justify">Rethinavelan.R, Joint Secretary <br> Phone: +91-9489947411</p>
+                    </address>
+                </div>               
+                <div class="col-sm-9">
+                    <!--  <iframe src="./files/maps.html" padding-left="150px" width="100%" height="650" frameborder="0" style="border:0" allowfullscreen=""></iframe> --> 
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.459053517937!2d79.8546625145673!3d12.011885591490566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a536446022cfb0b%3A0x5c0d300c8187a76b!2sPondicherry%20Engineering%20College!5e0!3m2!1sen!2sin!4v1578729344438!5m2!1sen!2sin" 
+                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="site-info"> © All Rights Reserved <br> Developed and Maintained by <br> Department of Computer Science &amp; Engineering <br> Pondicherry Engineering College</p>                   
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- script -->
+    <script src="./files/jquery.min.js.download"></script>
+    <script src="./files/bootstrap.min.js.download"></script>
+    <script src="./files/smooth-scroll.min.js.download"></script>
+    <script src="./files/main.js.download"></script>
+
+</body></html>
