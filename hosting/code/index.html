@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Code</title>
+</head>
+<body>
+<input type="text" id="code" value='        #! Shell script to make other department copies
+
+d1=(ece eee it mech civil chem eie physics chemistry maths hss)
+d2=("Electronics and Communication Engineering" "Electrical and Electronics Engineering" "Information Technology" "Mechanical Engineering" "Civil Engineering" "Chemical Engineering" "Electronics and Instrumentation Engineering" Physics Chemistry Mathematics "Humanities and Social Sciences")
+
+for i in 0 1 2 3 4 5 6 7 8 9 10
+do
+cp -r cse ${d1[$i]}
+cd ${d1[$i]}/home
+sed -i "s/Computer Science and Engineering/${d2[$i]}/g" index.php
+cd ../header
+sed -i "s/Computer Science and Engineering/${d2[$i]}/g" header.php
+cd ../..
+# mv ${d1[$i]}.jpg ${d1[$i]}/img/cover.jpg
+echo ${d2[$i]}" done"
+done' hidden>
+
+    <img src="code.png" alt="code" style="height: 100%;width: 100%;">
+    <button onclick="copyFun()">Copy code</button>
+    <script>
+        function copyFun() {
+            var copyText = document.getElementById("code");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+            alert("Copied the text: " + copyText.value);
+        }
+
+    </script>
+</body>
+</html>
