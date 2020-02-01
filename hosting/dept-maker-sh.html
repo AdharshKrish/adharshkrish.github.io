@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Code</title>
+    <style>
+        pre {
+                display:block;
+                border:#000 solid 1px;
+                overflow:auto;
+                max-height:340px;
+                font-size:12px;
+                width:535px;
+                padding:10px;
+                background:#E0E0E0;
+                margin:2em 0;
+            }	
+    </style>
+</head>
+<body>
+    <pre>
+        #! Shell script to make other department copies
+
+        d1=(ece eee it mech civil chem eie physics chemistry maths hss)
+        d2=("Electronics and Communication Engineering" "Electrical and Electronics Engineering" "Information Technology" "Mechanical Engineering" "Civil Engineering" "Chemical Engineering" "Electronics and Instrumentation Engineering" Physics Chemistry Mathematics "Humanities and Social Sciences")
+
+        for i in 0 1 2 3 4 5 6 7 8 9 10
+        do
+        cp -r cse ${d1[$i]}
+        cd ${d1[$i]}/home
+        sed -i "s/Computer Science and Engineering/${d2[$i]}/g" index.php
+        cd ../header
+        sed -i "s/Computer Science and Engineering/${d2[$i]}/g" header.php
+        cd ../..
+        # mv ${d1[$i]}.jpg ${d1[$i]}/img/cover.jpg
+        echo ${d2[$i]}" done"
+        done
+    </pre>
+    
+</body>
+</html>
