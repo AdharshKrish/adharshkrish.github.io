@@ -28,14 +28,13 @@ done' hidden>
     <button onclick="copyFun()">Copy code</button>
     <script>
         function copyFun() {
-            var copyText = document.getElementById("code");
-            copyText.focus();
-            copyText.select();
-//             copyText.setSelectionRange(0, 99999)
-            document.execCommand("copy");
-            alert("Copied the text");
+            var Text = document.getElementById("code");
+            navigator.clipboard.writeText(Text.value).then(function() {
+            alert('Async: Copying to clipboard was successful!');
+            }, function(err) {
+            alert('Async: Could not copy text: ', err);
+            });
         }
-
     </script>
 </body>
 </html>
