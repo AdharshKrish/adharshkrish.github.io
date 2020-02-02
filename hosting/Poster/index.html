@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Code Debugging</title>
-    <link href="https://fonts.googleapis.com/css?family=Finger+Paint|Contrail+One|Press+Start+2P|Share+Tech&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Finger+Paint|Oswald|Contrail+One|Press+Start+2P|Share+Tech&display=swap" rel="stylesheet">
     <!-- <link href="https://fonts.googleapis.com/css?family=Contrail+One&display=swap" rel="stylesheet"> -->
     <style>
         /* .bg-img{
@@ -22,8 +22,8 @@
             width: 100%;
             object-fit: cover; 
         }*/
-        .clg{font-family: 'Share Tech';color:#fff;position: absolute;top:0px;left:50px;font-size: 79px;}
-        .dept{color:#fff;position: absolute;top:100px;left:190px;font-size: 40px;}
+        .clg{font-family: 'Share Tech';z-index: 1;color:#fff;position: absolute;top:0px;left:50px;font-size: 79px;}
+        .dept{color:#fff;z-index: 1;position: absolute;top:100px;left:190px;font-size: 40px;}
         .pec-logo{
             position: absolute;
             top:150px;
@@ -68,7 +68,7 @@
             background-image: url("code.jpg");
             text-shadow: 5px 5px #0ff;
             font-weight: 900;
-
+            z-index: 2;
         }
         .contact{
             position: absolute;
@@ -77,6 +77,7 @@
             color: yellow;
             font-size: 38px;
             font-family: 'Contrail One';
+            z-index: 1;
         }
         .reg-fee{
             position: absolute;
@@ -86,22 +87,24 @@
             font-size: 38px;
             transform: rotate(-30deg);
             font-family: Cursive;
-            z-index: 2;
+            z-index: 3;
             line-height: 3.9;
         }
         .coding{
             position: absolute;
             height: 150px;
             left: 80px;
-            top:730px;
+            top:700px;
             background: none;
+            z-index: 1;
         }
         .typing{
             position: absolute;
-            height: 350px;
-            left: 850px;
-            top:740px;
-            transform: rotate(30deg);
+            height: 240px;
+            left: 980px;
+            top:890px;
+            transform: rotate(-30deg);
+            z-index: 1;
         }
         .reg-img{
             position: absolute;
@@ -109,11 +112,70 @@
             left:0px;
             top:900px;
             background: none;
+            z-index: 2;
+        }
+        .tree{
+            position: absolute;
+            top:1025px;
+            left:500px;
+            height: 280px;
+            z-index: 2;
+        }
+        .board{
+            position: absolute;
+            top:300px;
+            left:940px;
+            height: 300px;
+            z-index: 1;
+        }        
+        .trail{
+            position: absolute;
+            height: 100px;
+            left: 370px;
+            top:1000px;
+            background: none;
+            /* transform: rotate(20deg); */
+            z-index: 1;
+            /* display: none; */
+        }
+        .circle{
+            position: absolute;
+            height: 200px;
+            left: 50px;
+            top:380px;
+            background: none;
+            z-index: 1;
+        }
+        .security{
+            position: absolute;
+            height: 100px;
+            left: 100px;
+            top:431px;
+            background: rgba(150, 177, 204,0.4);
+            border-radius: 50px;
+            z-index: 1;
+        }
+        .globe{
+            position: absolute;
+            top:600px;
+            left:1000px;
+            z-index: 1;
+            height: 250px;
+        }
+        .date{
+            font-family: 'Oswald';
+            position: absolute;
+            top:400px;
+            left:1000px;
+            color: powderblue;
+            font-size: 60px;
+            /* height: 300px; */
+            z-index: 2;
         }
     </style>
 </head>
 <body>
-    <img class="bg-img" src="./bg.jpg" alt="">
+    <img class="bg-img" style="z-index: -2;" src="./bg.jpg" alt="">
     <!-- <div class="bg-img"></div> -->
     <h1 class="clg">PONDICHERRY ENGINEERING COLLEGE</h1>
     <img src="pec-logo.png" alt="" class="pec-logo">
@@ -128,6 +190,13 @@
     <center class="contact"><b>Contact</b><br>Adharsh &nbsp;&nbsp; - 9092876608<br>Kadhirvel - 8610329322</center>
     <!-- <img src="coding-png.png" alt="" class="coding"> -->
     <img src="typing.png" alt="" class="typing">
-
+    <img src="coder.png" alt="" class="coding">
+    <img src="tree.png" alt="" class="tree">
+    <img src="board.png" alt="" class="board">
+    <!-- <img src="trail.png" alt="" class="trail"> -->
+    <img src="circle.png" alt="" class="circle">
+    <img src="security.png" alt="" class="security">
+    <img src="globe.png" alt="" class="globe">
+    <div class="date">March 1</div>
 </body>
 </html>
