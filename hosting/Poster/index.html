@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Code Debugging</title>
-    <link href="https://fonts.googleapis.com/css?family=Finger+Paint|Oswald|Contrail+One|Press+Start+2P|Share+Tech&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Finger+Paint|Courier+Prime|Oswald|Share+Tech+Mono|Contrail+One|Press+Start+2P|Share+Tech&display=swap" rel="stylesheet">
     <!-- <link href="https://fonts.googleapis.com/css?family=Contrail+One&display=swap" rel="stylesheet"> -->
     <style>
         /* .bg-img{
@@ -40,39 +40,47 @@
         }
         .cyb-logo{
             position: absolute;
-            top:200px;
-            left:520px;
+            top:700px;
+            left:530px;
             height: 170px;
             z-index: 3;
-            background-image: radial-gradient(circle,white 20%,transparent 80%);
+            /* background-image: radial-gradient(circle,white 20%,transparent 80%); */
         }
         .cybyrus{
             position: absolute;
-            top:250px;
+            top:180px;
             left:380px;
             height: 380px;
             z-index: 3;
         }
+        @font-face {
+            font-family: 'Code';
+            /* src:url(PathwaysRough-Regular.ttf); */
+            src:url(Hochstadt-Rounded.ttf);
+        }
         .co-de{
             position: absolute;
-            color: red;
-            top:385px;
+            color: #f70;
+            top:384px;
             left:365px;
-            font-size: 55px;
-            line-height: 2.4;
-            font-family: 'Press Start 2P';
+            font-size: 100px;
+            line-height: 1;
+            /* font-family: 'Press Start 2P'; */
+            /* font-family: 'Courier Prime'; */
+            font-family: 'Code';
+
             height: 530px;
             width: 530px;
             border-radius: 275px;
             text-align: center;
             background-image: url("code.jpg");
-            text-shadow: 5px 5px #0ff;
-            font-weight: 900;
+            /* text-shadow: 5px 5px #0ff; */
+            font-weight: 500;
             z-index: 2;
         }
         .contact{
             position: absolute;
-            top:1130px;
+            top:1115px;
             left:830px;
             color: yellow;
             font-size: 38px;
@@ -81,20 +89,23 @@
         }
         .reg-fee{
             position: absolute;
-            top:955px;
-            left:90px;
-            color: #000;
-            font-size: 38px;
-            transform: rotate(-30deg);
-            font-family: Cursive;
+            top:1070px;
+            left:145px;
+            color: #ff0000;
+            font-size: 32px;
+            /* transform: rotate(-30deg); */
+            /* background-color: #fff; */
+            font-family: Oswald;
             z-index: 3;
-            line-height: 3.9;
+            font-weight: 700;
+            line-height: 1.5;
+            /* border-radius: 20px; */
         }
         .coding{
             position: absolute;
-            height: 150px;
-            left: 80px;
-            top:700px;
+            height: 250px;
+            left: 50px;
+            top:600px;
             background: none;
             z-index: 1;
         }
@@ -116,9 +127,9 @@
         }
         .tree{
             position: absolute;
-            top:1025px;
-            left:500px;
-            height: 280px;
+            top:1070px;
+            left:525px;
+            height: 200px;
             z-index: 2;
         }
         .board{
@@ -148,12 +159,18 @@
         }
         .security{
             position: absolute;
-            height: 100px;
-            left: 100px;
-            top:431px;
-            background: rgba(150, 177, 204,0.4);
+            /* height: 100px; */
+            left: 105px;
+            top:435px;
+            /* background: rgba(150, 177, 204,0.4); */
             border-radius: 50px;
             z-index: 1;
+            color: white;
+            font-size: 28px;
+            font-weight: 900;
+            text-shadow: 2px 2px #00f;
+            line-height: 0.8;
+            /* transform: rotate(-35deg); */
         }
         .globe{
             position: absolute;
@@ -163,14 +180,43 @@
             height: 250px;
         }
         .date{
-            font-family: 'Oswald';
+            /* font-family: 'Oswald'; */
+            font-family: 'Share Tech Mono';
             position: absolute;
-            top:400px;
+            top:390px;
             left:1000px;
-            color: powderblue;
+            /* color: powderblue; */
+            color: yellow;
             font-size: 60px;
             /* height: 300px; */
             z-index: 2;
+            line-height: 1;
+        }
+        .date small{
+            font-size: 30px;
+            color: burlywood;
+        }
+        .rules{
+            font-family: 'Oswald';
+            position: absolute;
+            top:780px;
+            left:120px;
+            color: #fff;
+            font-size: 50px;
+            /* height: 300px; */
+            z-index: 2;
+        }
+        .website{
+            color: #fff;
+            position: absolute;
+            top: 1250px;
+            left:330px;
+            font-size: 30px;
+            z-index: 2;
+            background-image: linear-gradient(to right, #ff000000, #008cffbb, #008cffbb, #ff000000);
+            padding: 12px 100px;
+            font-family: 'Share Tech Mono';
+
         }
     </style>
 </head>
@@ -186,17 +232,20 @@
     <img src="cybyrus.png" alt="" class="cybyrus">
     <div class="co-de"><br>CODE<br>DEBUGGING</div>
     <center class="reg-fee"><b>Registration<br>Rs 50/-</b></center>
-    <img src="3941.png" alt="" class="reg-img">
+    <img src="reg-img.png" alt="" class="reg-img">
     <center class="contact"><b>Contact</b><br>Adharsh &nbsp;&nbsp; - 9092876608<br>Kadhirvel - 8610329322</center>
     <!-- <img src="coding-png.png" alt="" class="coding"> -->
     <img src="typing.png" alt="" class="typing">
     <img src="coder.png" alt="" class="coding">
     <img src="tree.png" alt="" class="tree">
+    <div class="website">Website: cybyrus20.pec.edu</div>
     <img src="board.png" alt="" class="board">
     <!-- <img src="trail.png" alt="" class="trail"> -->
     <img src="circle.png" alt="" class="circle">
-    <img src="security.png" alt="" class="security">
+    <!-- <img src="security.png" alt="" class="security"> -->
+    <center class="security">Win<br>exciting<br>cash<br>prize</center>
     <img src="globe.png" alt="" class="globe">
-    <div class="date">March 1</div>
+    <div class="date">Feb <br>13,14<!--<br><small>&nbsp;&nbsp;2:00 pm</small>--></div>
+    <div class="rules">2 Rounds</div>
 </body>
 </html>
