@@ -1,0 +1,214 @@
+
+*{
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    box-sizing:border-box;
+}
+.container-dim{
+    width:100%;
+    position: relative;
+}
+
+.logo-container{
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display:block;
+    /* margin-left: 15px; */
+    /* border: 1px solid red; */
+    float:left;
+}
+.logo{
+    width:50px;
+}
+/* #row-top-margin{
+    margin-top:0px;
+    margin-right:0;
+    margin-left:0;
+
+} */
+.college_name{
+    float:left;
+    font-family: 'Times New Roman';
+    align-content: center;
+    margin-bottom:0;
+    margin-top:1.9em;
+    padding-right:1.6em;
+    font-variant: small-caps;
+    line-height: 1.6;
+    padding-left:10px;
+}
+.college-name-text{
+    font-size: 20px;
+    line-height:0;
+    font-weight:normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing:normal;
+    margin-top:0;
+    margin-bottom:-4px;
+    text-shadow:0 3px 6px rgba(0,0,0,0.16);
+}
+ .dept-name{
+    float:left;
+    padding-left:1.5em;
+    margin-top:15px;
+    padding-top: 8px;
+    margin-bottom: 15px;
+    border-left:1px solid #707070;
+
+}
+.dept-of{
+    font-family: 'Times New Roman', Times, serif;
+    font-size:15px;
+    text-shadow:0 3px 6px rgba(0,0,0,0.16);
+    margin-bottom: 0px;
+
+}
+.dept-name-text{
+    font-family:'Times New Roman', Times, serif;
+    font-size:25px;
+    /* font-weight:bold; */
+    font-variant: small-caps;
+    text-shadow:0 3px 6px rgba(0,0,0,0.16);
+    margin-top: 0;
+}
+/* .search-box{
+    float:right;
+} */
+
+.search-box input[type=text]{
+    /* width: 30px; */
+    width:150px;
+    height:20px;
+    border: none;
+    padding: 5px;
+    padding-bottom: 10px;
+    margin-top: -20px;
+    outline: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 30px;
+}
+.search-bar{
+    position: absolute;
+}
+
+/* .faculty-header{
+    border-top:3px double black;
+    border-bottom:3px double black;
+    font-family: 'Oswald',sans-serif;
+    
+    margin-left:3%;
+    margin-right:3%;
+    padding-top:0px;
+    padding-bottom:0px;
+}
+.faculty-header h4{
+    text-align: center;
+    font-family: 'Oswald',sans-serif;
+    font-weight:normal;
+    letter-spacing: normal;
+    font-style: normal;
+    line-height:normal;
+    font-size:36px;
+}    */
+
+#m_ham{
+    display: none;
+}
+
+@media screen and (max-width:985px){
+    .search-box,#overlay{
+        display:none;
+    }
+
+    #m_ham{
+        display: block;
+    }
+}
+
+@media (max-width:786px) {
+    .college_name{
+        display:none;
+    }
+    .faculty-header h4{
+        font-size:32px;
+
+    }
+    .dept-name{
+        margin-left:0.3em;
+    }
+   
+}
+
+
+@media screen and (max-width:530px){
+
+    .dept-name{
+        padding-left:0;
+        border: none;
+
+    }.dept-of{
+        font-size:12px;
+
+    }
+    .dept-name-text{
+        font-size:21px;
+    }
+    .logo{
+        width:38px;
+    }
+    .faculty-header h4{
+        font-size: 32px;
+    }
+}
+@media screen and (max-width:420px){
+
+    .dept-name{
+        padding-left:0.4em;
+        margin: 7px 0;
+        border: none;
+
+    }
+    .dept-of{
+        font-size:12px;
+
+    }
+    .dept-name-text{
+        font-size:18px;
+    }
+    .logo{
+        width:32px;
+    }
+    .logo-container{
+        padding: 10px;
+    }
+
+    .faculty-header h4{
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width:355px){
+
+    .dept-name{
+        padding-left:0.4em;
+
+    }
+    .dept-of{
+        font-size:10px;
+
+    }
+    .dept-name-text{
+        font-size:15px;
+    }
+    .logo{
+        width:30px;
+    }
+    .logo-container{
+        padding: 8px 0 0 10px;
+    }
+}
+

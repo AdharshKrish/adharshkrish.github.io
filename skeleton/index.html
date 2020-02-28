@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Skeleton</title>
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/bootstrap4.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/material-icons.css">
+    <script src="js/jquery.min.js"></script>    
+    <script src="js/materialize.min.js"></script>
+    <script src="js/bootstrap4.js"></script>
+    <script src="js/menu.js"></script>
+
+    <style>
+        .fixed-action-btn {
+            right: 98%;
+            left: 2%;
+        }
+        .floatbtn a {
+            width: 200px;
+            border-radius: 5px;
+            color: black;
+            text-align: center;
+            text-decoration: none
+        }
+    </style>
+    
+</head>
+
+<body>
+<floatbtn class="fixed-action-btn" style="right:99%;
+            left: 2%;z-index:4">
+    <a class="btn-floating btn-large">
+        <i class="material-icons" id="iconbtn" style="font-size:40px">expand_less</i>
+    </a>
+    <ul class="floatbtn">
+        <li><a href="../home/" class="btn-floating white"
+                style=" width:200px; border-radius:5px;color:black;text-align:center;text-decoration:none">Home</a></li>
+        <li><a href="../newsupdate/" class="btn-floating white"
+                style=" width:200px; border-radius:5px;color:black;text-align:center;text-decoration:none">Notice &
+                Updates</a></li>
+        <li><a href="../articles/" class="btn-floating white"
+                style=" width:200px; border-radius:5px;color:black;text-align:center;text-decoration:none">Articles</a>
+        </li>
+        <li><a href="../overview/" class="btn-floating white"
+                style=" width:200px; border-radius:5px;color:black;text-align:center;text-decoration:none">Overview</a>
+        </li>
+        <li><a href="../facultylist/" class="btn-floating white"
+                style=" width:200px; border-radius:5px;color:black;text-align:center;text-decoration:none">Faculty</a>
+        </li>
+        <li><a href="../courses/" class="btn-floating white"
+                style=" width:200px; border-radius:5px;color:black;text-align:center;text-decoration:none">Courses &
+                Curriculum</a></li>
+    </ul>
+</floatbtn>
+<header>
+    <div class="container-fluid container-dim">
+        <div class="row" id="row-top-margin">
+            <!-- image start!-->
+            <div class="logo-container">
+                <img class="logo" src="img/logo.png" alt="logo_image" width="100">
+            </div>
+            <!--image end-->
+
+            <!--college Name start-->
+            <div class="college_name">
+                <h4 class="college-name-text">Pondicherry</h4><br>
+                <h4 class="college-name-text">Engineering</h4><br>
+                <h4 class="college-name-text">College</h4>
+            </div>
+            <!--College Name End-->
+
+            <!--department name start-->
+            <div class="dept-name" id="dept-name">
+                <h4 class="dept-of">DEPARTMENT <i>of</i></h4>
+                <h4 class="dept-name-text">Computer Science and Engineering</h4>  <!--enter department name here-->
+            </div>
+            <!--department name end-->
+
+            <!-- Search Box  start-->
+            <div class="search-box" style="position: absolute;top:0px;right: 80px;padding-top: 0px;">
+                <form>
+                    <input class="search-bar" type="text" placeholder="Search" style="top: 50px;">
+                    <i class="material-icons" style="font-size: 43px;margin-top:30px;">search</i>
+                </form>
+            </div>
+            <!-- <div class="menu-nav"> -->
+            <a data-toggle="collapse" href="#collapseMenu">
+                <div class="container" id="overlay" onclick="this.classList.toggle('change')" style="position: absolute;right:30px;z-index:6">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </a>
+                <!-- <div class="menu" id="menu" style="display:none;">
+                    <div class="container">
+                        <div class="search-flex"
+                            style="display: flex;width: 100%;justify-content: center;margin-top: 45px;">
+                            <div class="search-container">
+                                <form>
+                                    <input type="text" placeholder="Search.." name="search">
+                                    <button type="submit"><i class="material-icons" style="font-size: 30px;">search</i></button>
+                                    </input>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row menu-row">
+                            <div class="col-md-4">
+                                <ul>
+                                    <li>
+                                        <a href="#">IIS</a>
+                                        <a href="#">Placement</a>
+                                        <a href="#">Resource</a>
+                                        <a href="#">Alumni</a>
+
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div class="col-md-4">
+                                <hr class="d-block d-md-none " style="border-color: aliceblue;">
+                                <ul>
+                                    <li>
+                                        <a href="#">About</a>
+                                        <a href="#">Gallery</a>
+                                        <a href="#">On Campus</a>
+                                        <a href="#">Committes</a>
+                                        <a href="#">Cells</a>
+                                        <a href="#">Club</a>
+                                        <a href="#">Chapters</a>
+                                        <a href="#">Academics</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <ul>
+                                    <hr class="d-block d-md-none" style="border-color: aliceblue;">
+                                    <li>
+                                        <a href="#">Hostel</a>
+                                        <a href="#">Library</a>
+                                        <a href="#">Pec Newsletter</a>
+                                        <a href="#">About</a>
+                                        <a href="#">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+            <!-- </div> -->
+            <!-- hamburger menu end mobile menu start -->
+
+            <a data-toggle="collapse" href="#collapseMenu">
+                <div id="m_ham" style="background-color:transparent;border-radius: 4px;position: fixed;bottom: 20px; right: 30px;z-index:6" onclick="this.classList.toggle('change')">
+                    <div class="mbar1"></div>
+                    <div class="mbar2"></div>
+                    <div class="mbar3"></div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <hr style="margin: 0 2%;border-width: 2px;box-shadow: 0 3 6 #0003">
+</header>
+<div class="pec-menu collapse" id="collapseMenu">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-6" id="menu-col-1">
+                <ul>
+                    <li>IIS</li>
+                    <li>Placement</li>
+                    <li>Research</li>
+                    <li>Admission</li>
+                    <li>Academics</li>
+                    <li>Alumni</li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6" id="menu-col-2">
+                <ul>
+                    <li onmouseover="menu('about')">About</li>
+                    <li onmouseover="menu('gallery')">Gallery</li>
+                    <li onmouseover="menu('oncampus')">On&nbsp;Campus<i class="material-icons" style="font-size:15px;margin-top:12px;float:right">navigate_next</i></li>
+                    <li onmouseover="menu('departments')">Departments<i class="material-icons" style="font-size:15px;margin-top:12px;float:right">navigate_next</i></li>
+                    <li onmouseover="menu('administration')">Administration</li>
+                    <li onmouseover="menu('teqip')">TEQIP</li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-4" id="menu-col-3">
+                <p style="font-size:18px;line-height:1.5">Pondicherry Engineering College (PEC) is an Institution sponsored by the Union Territory of Pondicherry, India. The College was started in 1984 under the VII Five Year Plan. It is an autonomous Institution for the purposes of administration, staff recruitment and College development and is managed by a Board of Governors.</p>
+            </div>
+            <div class="col-lg-3" id="menu-col-4">
+                <img src="college-img" alt="college-img">
+            </div>
+        </div>
+    </div>
+</div>
+<main>
+    <!--enter main content here-->
+</main>
+<footer>
+    <div class="foot">
+        <div class="footer">
+            <div class="container-fluid">
+                <div class="row row-footer-1">
+                    <div class="col-sm-7 col-md-4 col-lg-3 col-xl-3 col-footer-1">
+                        <div class="google-maps">
+                            <iframe
+                                src="https://maps.google.com/maps?q=pondicherry%20engineering%20college&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                width="400" height="280" frameborder="0" style="border:0"></iframe>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-md-3 col-lg-3 col-xl-3 col-footer-1">
+                        <p class="pp">Pondicherry Engineering College </p>
+                        <p class="pp">Pillaichavadi,</p>
+                        <p class="pp">Puducherry,</p>
+                        <p class="pp">India-605014</p>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-lg-3 col-xl-2 col-footer-1">
+                        <p class="pp">Ph (+91)0413-2655281</p>
+                        <p class="pp">FAX (+91)0413-2655101 </p>
+                        <p class="pp">E-Mail info@pec.edu</p>
+                        <div class="social_icon">
+                            <a href="https://www.facebook.com/PEC.Pondicherry" target="_blank">
+                                <img src="img/facebook-square-brands.svg" href=" " class="icons" height="36"
+                                    width="36" alt=""></a>
+                            <!-- <img src="../footer/img/twitter-brands.svg" class="icons" height="36" width="36" alt=""> -->
+                            <a href="https://www.linkedin.com/school/pondicherry-engineering-college/" target="_blank">
+                                <img src="img/linkedin-brands.svg" class="icons" height="36" width="36"
+                                    alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 hidden-sm-md col-lg-1 col-xl-2 col-footer-1"></div>
+                    <div class="col-sm-6 col-md-2 col-lg-2 col-xl-2 col-footer-1 padding_remove">
+                        <!-- <div class="Rectangle-5"> -->
+                        <button class="contact" onclick="window.location.href='http://cms.pec.edu/test/contact-us/'">CONTACT&nbsp;US</button>
+                        <!-- </div> -->
+                        <p class="pp">General enquiry</p>
+                        <p class="pp">Ragging helpline</p>
+                        <p class="pp">Grievance</p>
+                    </div>
+                </div>
+                <div class="footer-2">
+                    <div class="container-fluid tb1">
+                        <div class="nested-footer-2 tb2">
+                            <div class="row row-footer-2">
+                                <div class="col-4 col-sm-4 col-md-2 text-center col-footer-2">
+                                    <a href="http://pec.edu" target="blank">
+                                        <p class="link-footer-2">Old&nbsp;Site</p>
+                                    </a>
+                                </div>
+                                <div class="col-4 col-sm-4 col-md-2 text-center col-footer-2">
+                                    <a href="http://cms.pec.edu/test/cells/iedc">
+                                        <p class="link-footer-2">IEDC</p>
+                                    </a>
+                                </div>
+                                <div class="col-4 col-sm-4 col-md-2 text-center col-footer-2">
+                                    <a href="https://www.nirfindia.org/2019/EngineeringRanking.html">
+                                        <p class="link-footer-2">NIRF</p>
+                                    </a>
+                                </div>
+                                <div class="col-4 col-sm-4 col-md-2 text-center col-footer-2">
+                                    <a href="http://cms.pec.edu/test/sitemap">
+                                        <p class="link-footer-2">Sitemap</p>
+                                    </a>
+                                </div>
+                                <div class="col-4 col-sm-4 col-md-2 text-center col-footer-2">
+                                    <a href="http://cms.pec.edu/test/about-page">
+                                        <p class="link-footer-2">AboutSite</p>
+                                    </a>
+                                </div>
+                                <div class="col-4 col-sm-4 col-md-2 text-center col-footer-2">
+                                    <a href="http://cms.pec.edu/test/disclaimer">
+                                        <p class="link-footer-2">Disclaimer</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.fixed-action-btn');
+        var instances = M.FloatingActionButton.init(elems, {
+            direction: 'top',
+            hoverEnabled: false
+        });
+    });
+    iconbtn.addEventListener('click', () => {
+        let icon = document.getElementById('iconbtn').innerHTML;
+        if (icon == "expand_less")
+            document.getElementById('iconbtn').innerHTML = "expand_more";
+        else
+            document.getElementById('iconbtn').innerHTML = "expand_less";
+    });
+    $( "#overlay" ).click(function() {
+    $( ".menu" ).slideToggle( "fast", function() {
+      // Animation complete.
+    });
+  });
+
+  $( "#m_ham" ).click(function() {
+    $( ".menu" ).slideToggle( "fast");
+  });
+
+</script>
+
+</body>
+
+</html>
