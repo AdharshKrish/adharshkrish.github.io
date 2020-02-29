@@ -114,7 +114,7 @@
     font-size:36px;
 }    */
 
-#m_ham{
+.mob-btn{
     display: none;
 }
 
@@ -123,7 +123,7 @@
         display:none;
     }
 
-    #m_ham{
+    .mob-btn{
         display: block;
     }
 }

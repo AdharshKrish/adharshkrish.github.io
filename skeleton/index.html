@@ -21,44 +21,40 @@
         .fixed-action-btn {
             right: 98%;
             left: 2%;
+            z-index:4;
+            bottom:10px;
         }
         .floatbtn a {
             width: 200px;
             border-radius: 5px;
-            color: black;
+            font-size: 16px;
+            font-weight: 500;
+            color: #000;
+            background-color: #fff;
             text-align: center;
-            text-decoration: none
+            text-decoration: none;
+        }
+        .floatbtn a:hover{
+            background-color: #2e8690;
+            color:#fff;
         }
     </style>
-    
 </head>
 
 <body>
     
 
-<floatbtn class="fixed-action-btn" style="right:99%;
-            left: 2%;z-index:4">
-    <a class="btn-floating btn-large">
+<floatbtn class="fixed-action-btn">
+    <a class="btn-floating btn-large" style="background-color: #2e8690">
         <i class="material-icons" id="iconbtn" style="font-size:40px">expand_less</i>
     </a>
     <ul class="floatbtn">
-        <li><a href="../home/" class="btn-floating white"
-                style=" width:200px; border-radius:5px;color:black;text-align:center;text-decoration:none">Home</a></li>
-        <li><a href="../newsupdate/" class="btn-floating white"
-                style=" width:200px; border-radius:5px;color:black;text-align:center;text-decoration:none">Notice &
-                Updates</a></li>
-        <li><a href="../articles/" class="btn-floating white"
-                style=" width:200px; border-radius:5px;color:black;text-align:center;text-decoration:none">Articles</a>
-        </li>
-        <li><a href="../overview/" class="btn-floating white"
-                style=" width:200px; border-radius:5px;color:black;text-align:center;text-decoration:none">Overview</a>
-        </li>
-        <li><a href="../facultylist/" class="btn-floating white"
-                style=" width:200px; border-radius:5px;color:black;text-align:center;text-decoration:none">Faculty</a>
-        </li>
-        <li><a href="../courses/" class="btn-floating white"
-                style=" width:200px; border-radius:5px;color:black;text-align:center;text-decoration:none">Courses &
-                Curriculum</a></li>
+        <li><a href="../home/" class="btn-floating">Home</a></li>
+        <li><a href="../newsupdate/" class="btn-floating">Notice & Updates</a></li>
+        <li><a href="../articles/" class="btn-floating">Articles</a></li>
+        <li><a href="../overview/" class="btn-floating">Overview</a></li>
+        <li><a href="../facultylist/" class="btn-floating">Faculty</a></li>
+        <li><a href="../courses/" class="btn-floating">Courses & Curriculum</a></li>
     </ul>
 </floatbtn>
 <header>
@@ -94,24 +90,29 @@
             </div>
             <!-- <div class="menu-nav"> -->
             <a data-toggle="collapse" href="#collapseMenu">
-                <div class="container" id="overlay" onclick="this.classList.toggle('change')" style="position: absolute;right:30px;z-index:6">
+                <div class="container" id="overlay" onclick="this.classList.toggle('change')">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
                 </div>
             </a>
 
-            <a data-toggle="collapse" href="#collapseMenu">
-                <div id="m_ham" style="background-color:transparent;border-radius: 4px;position: fixed;bottom: 20px; right: 30px;z-index:6" onclick="this.classList.toggle('change')">
+            <div class="mob-btn">
+               <a href="#row-top-margin"> <i data-toggle="collapse" href="#collapseSearch" style="font-size:36px;font-weight: 600;" class="material-icons">search</i></a>
+               <div data-toggle="collapse" href="#collapseMenu" onclick="this.classList.toggle('change')">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
                 </div>
-            </a>
+            </div>
+            
         </div>
     </div>
     <hr style="margin: 0 2%;border-width: 2px;box-shadow: 0 3 6 #0003">
 </header>
+<div style="display:flex;justify-content: center">
+    <input class="collapse" id="collapseSearch" type="text" style="padding-left:10px;" placeholder="Enter search text here...">
+</div>
 <div class="pec-menu collapse" id="collapseMenu">
     <div class="card-body">
         <div class="row">
@@ -248,16 +249,6 @@
         else
             document.getElementById('iconbtn').innerHTML = "expand_less";
     });
-    $( "#overlay" ).click(function() {
-    $( ".menu" ).slideToggle( "fast", function() {
-      // Animation complete.
-    });
-  });
-
-  $( "#m_ham" ).click(function() {
-    $( ".menu" ).slideToggle( "fast");
-  });
-
 </script>
 
 </body>

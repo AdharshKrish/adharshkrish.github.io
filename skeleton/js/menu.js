@@ -7,9 +7,10 @@ function menu(elt,item)
         document.getElementById('menu-col-3').style.display = 'block';
         document.getElementById('menu-col-4').style.display = 'block';
     }
-    document.getElementById('menu-col-3').classList.replace('col-lg-6','col-lg-3');
-    document.getElementById('menu-col-3').classList.replace('col-lg-2','col-lg-3');
-    document.getElementById('menu-col-4').classList.replace('col-lg-4','col-lg-3');
+    document.getElementById('menu-col-3').classList.replace('col-4','col-6');
+    document.getElementById('menu-col-4').classList.replace('col-8','col-6');
+    if(window.outerWidth<996)
+        document.getElementById('menu-col-4').style.left='50%';
     document.getElementById('menu-col-3').style.borderRight='none';
 
     var m2 = document.getElementsByClassName("menu2");
@@ -23,18 +24,21 @@ function menu(elt,item)
         document.getElementById('menu-col-4').innerHTML='<img src="gallery-2.jpg" alt="gallery-2">';
     }
     else if(item==='oncampus'){
-        // document.getElementById('menu-col-3').classList.replace('col-lg-3','col-lg-2');
-        // document.getElementById('menu-col-4').classList.replace('col-lg-3','col-lg-4');
+        if(window.outerWidth<996){
+            document.getElementById('menu-col-3').classList.replace('col-6','col-4');
+            document.getElementById('menu-col-4').classList.replace('col-6','col-8');
+            document.getElementById('menu-col-4').style.left='35%';
+        }
         document.getElementById('menu-col-3').style.borderRight='1px solid #707070';
         document.getElementById('menu-col-3').innerHTML='<ul><li class="menu3">Campus&nbsp;Life</li><li class="menu3" onmouseover="menu1(this,1)">Committees<i class="material-icons" style="font-size:15px;margin-top:12px;float:right">navigate_next</i></li><li class="menu3" onmouseover="menu1(this,2)">Cells<i class="material-icons" style="font-size:15px;margin-top:12px;float:right">navigate_next</i></li><li class="menu3" onmouseover="menu1(this,3)">Clubs<i class="material-icons" style="font-size:15px;margin-top:12px;float:right">navigate_next</i></li><li class="menu3" onmouseover="menu1(this,4)">Chapters<i class="material-icons" style="font-size:15px;margin-top:12px;float:right">navigate_next</i></li><li class="menu3">Facilities</li></ul>';
         document.getElementById('menu-col-4').innerHTML='';
     }
     else if(item==='departments'){
         // document.getElementById('menu-col-3').classList.replace('col-lg-3','col-lg-6');
-        document.getElementById('menu-col-3').classList.replace('col-6','col-7');
+        // document.getElementById('menu-col-3').classList.replace('col-6','col-7');
         // document.getElementById('menu-col-4').classList.replace('col-6','col-5');
-        document.getElementById('menu-col-3').innerHTML='<ul><li>Chemical Engineering</li><li>Chemistry</li><li>Civil Engineering</li><li>Computer Science and Engineering</li><li>Electronics and Communication Engineering</li><li>Electronics and Instrumentation Engineering</li></ul>';
-        document.getElementById('menu-col-4').innerHTML='<ul><li>Humanities and Social Sciences</li><li>Information Technology</li><li>Mathematics</li><li>Mechanical Engineering</li><li>Physics</li></ul>';
+        document.getElementById('menu-col-3').innerHTML='<ul><li>Chemical Engineering</li><li>Chemistry</li><li>Civil Engineering</li><li>Computer Science and Engineering</li><li>Electronics and Communication Engineering</li></ul>';
+        document.getElementById('menu-col-4').innerHTML='<ul><li>Electronics and Instrumentation Engineering</li><li>Humanities and Social Sciences</li><li>Information Technology</li><li>Mathematics</li><li>Mechanical Engineering</li><li>Physics</li></ul>';
     }
     else{
         document.getElementById('menu-col-3').innerHTML='<p style="line-height:1.5">Pondicherry Engineering College (PEC) is an Institution sponsored by the Union Territory of Pondicherry, India. The College was started in 1984 under the VII Five Year Plan. It is an autonomous Institution for the purposes of administration, staff recruitment and College development and is managed by a Board of Governors.</p>';

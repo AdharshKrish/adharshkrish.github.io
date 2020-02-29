@@ -4,9 +4,26 @@
     margin-top: 25px;
     background-color: transparent;
     padding: 6px 10px;
-    z-index: 5;
+    position: absolute;
+    right:30px;
+    z-index:6;
 }
 
+.mob-btn{
+  background-color:#ddd;
+  padding:5px;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 20px; 
+  right: 10px;
+  z-index:6;
+}
+.mob-btn a{
+  color:#000;
+}
+.mob-btn a:hover{
+  color:#000;
+}
 .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
@@ -16,13 +33,13 @@
     transition: 0.4s;
 }
   .change .bar1 {
-    transform: rotate(-45deg) translate(-3px, 11px);
+    transform: rotate(-45deg) translate(-6px, 8px);
   }
   .change .bar2 {
     opacity: 0;
   }
   .change .bar3 {
-    transform: rotate(45deg) translate(-3px, -11px);
+    transform: rotate(45deg) translate(-6px, -9px);
   }
   
   .search-bar{
@@ -71,6 +88,12 @@
 
 }
 
+#collapseSearch{
+  transition:0.3s;
+  width:90%;
+}
+
+
 #menu2-cover{
   background-color:#fff;
   display:none;
@@ -82,6 +105,7 @@
 #menu2-cover button{
   position:absolute;
   bottom:0;
+  left:20px;
   margin: 10px;
   border:none;
   background: #fff;
@@ -94,13 +118,12 @@
 }
 
 @media(max-width:996px){
-    
-    .pec-menu{
-      font-size: 15px;
-    }
-    #chapter-font{
-      font-size:13px;
-    }
+  .pec-menu{
+    font-size: 18px;
+  }
+  #chapter-font{
+    font-size:16px;
+  }
     #menu-col-3{
       display: none;
       position: absolute;
@@ -118,19 +141,22 @@
 
 @media(max-width:700px){
   .pec-menu{
-    font-size: 12px;
+    font-size: 15px;
   }
   #chapter-font{
-    font-size:10px;
+    font-size:13px;
   }
 }
 
 @media(max-width:615px){
-  #menu-col-3{
-    line-height: 30px;
+  #menu-col-1,#menu-col-2,#menu-col-3,#menu-col-4 {
     padding-left:5vw;
-  }
-  #menu-col-4{
     line-height: 30px;
+  }
+  .pec-menu{
+    font-size: 12px;
+  }
+  #chapter-font{
+    font-size:10px;
   }
 }
