@@ -1,41 +1,28 @@
 #overlay {
-    margin: 0 auto;
-    margin: 0 auto;
-    width: 50px;
+    width: auto;
+    height: auto;
     margin-top: 25px;
-    position: relative;
     background-color: transparent;
-    height: 40px;
-    padding: 4px 10px;
-    z-index: 10;
-    border-radius: 4px;
+    padding: 6px 10px;
+    z-index: 5;
 }
 
 .bar1, .bar2, .bar3 {
     width: 35px;
-    height: 15%;
-    background-color: #333;
-    border-radius: 5px;
-    margin: 6px 0;
-    transition: 0.4s;
-  }
-  .mbar1, .mbar2, .mbar3 {
-    width: 35px;
     height: 5px;
     background-color: #333;
     border-radius: 5px;
-    margin: 6px 0;
+    margin: 5px 0;
     transition: 0.4s;
+}
+  .change .bar1 {
+    transform: rotate(-45deg) translate(-3px, 11px);
   }
-  
-  .change .bar1,.change .mbar1 {
-    transform: rotate(-45deg) translate(-9px, 6px);
-  }
-  .change .bar2,.change .mbar2 {
+  .change .bar2 {
     opacity: 0;
   }
-  .change .bar3, .change .mbar3 {
-    transform: rotate(45deg) translate(-8px, -8px);
+  .change .bar3 {
+    transform: rotate(45deg) translate(-3px, -11px);
   }
   
   .search-bar{
@@ -52,6 +39,14 @@
     font-size: 20px;
     /* border-top: 3px solid #2e8690; */
     border-bottom: 3px solid #2e8690;
+}
+.menu2{
+    text-decoration: none;
+    color: #000;
+}
+.active-m2{
+    text-decoration:underline;
+    color:#2e8690;
 }
 
 #menu-col-1{
@@ -76,20 +71,66 @@
 
 }
 
-
-@media(max-width:992px){
-    #menu-col-4{
-        display: none;
-    }
+#menu2-cover{
+  background-color:#fff;
+  display:none;
+  width:100%;
+  height:310px;
+  position: relative;
+  z-index: 2;
+}
+#menu2-cover button{
+  position:absolute;
+  bottom:0;
+  margin: 10px;
+  border:none;
+  background: #fff;
+}
+#menu2-cover button:focus{
+  outline:none;
+}
+#chapter-font{
+  font-size: 18px;
 }
 
-@media(max-width:768px){
+@media(max-width:996px){
+    
+    .pec-menu{
+      font-size: 15px;
+    }
+    #chapter-font{
+      font-size:13px;
+    }
     #menu-col-3{
-        display: none;
+      display: none;
+      position: absolute;
+      width:50%;
+      z-index: 3;
+    }
+    #menu-col-4{
+      padding-left: 20px;
+      display: none;
+      left:50%;
+      position: absolute;
+      z-index: 3;
     }
 }
 
-/* 
-main{
-    height:350px;
-} */
+@media(max-width:700px){
+  .pec-menu{
+    font-size: 12px;
+  }
+  #chapter-font{
+    font-size:10px;
+  }
+}
+
+@media(max-width:615px){
+  #menu-col-3{
+    line-height: 30px;
+    padding-left:5vw;
+  }
+  #menu-col-4{
+    line-height: 30px;
+  }
+}

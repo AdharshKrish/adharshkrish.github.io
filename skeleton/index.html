@@ -15,7 +15,7 @@
     <script src="js/jquery.min.js"></script>    
     <script src="js/materialize.min.js"></script>
     <script src="js/bootstrap4.js"></script>
-    <script src="js/menu.js"></script>
+    <script defer src="js/menu.js"></script>
 
     <style>
         .fixed-action-btn {
@@ -34,6 +34,8 @@
 </head>
 
 <body>
+    
+
 <floatbtn class="fixed-action-btn" style="right:99%;
             left: 2%;z-index:4">
     <a class="btn-floating btn-large">
@@ -98,70 +100,12 @@
                     <div class="bar3"></div>
                 </div>
             </a>
-                <!-- <div class="menu" id="menu" style="display:none;">
-                    <div class="container">
-                        <div class="search-flex"
-                            style="display: flex;width: 100%;justify-content: center;margin-top: 45px;">
-                            <div class="search-container">
-                                <form>
-                                    <input type="text" placeholder="Search.." name="search">
-                                    <button type="submit"><i class="material-icons" style="font-size: 30px;">search</i></button>
-                                    </input>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="row menu-row">
-                            <div class="col-md-4">
-                                <ul>
-                                    <li>
-                                        <a href="#">IIS</a>
-                                        <a href="#">Placement</a>
-                                        <a href="#">Resource</a>
-                                        <a href="#">Alumni</a>
-
-                                    </li>
-                                </ul>
-
-                            </div>
-                            <div class="col-md-4">
-                                <hr class="d-block d-md-none " style="border-color: aliceblue;">
-                                <ul>
-                                    <li>
-                                        <a href="#">About</a>
-                                        <a href="#">Gallery</a>
-                                        <a href="#">On Campus</a>
-                                        <a href="#">Committes</a>
-                                        <a href="#">Cells</a>
-                                        <a href="#">Club</a>
-                                        <a href="#">Chapters</a>
-                                        <a href="#">Academics</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-md-4">
-                                <ul>
-                                    <hr class="d-block d-md-none" style="border-color: aliceblue;">
-                                    <li>
-                                        <a href="#">Hostel</a>
-                                        <a href="#">Library</a>
-                                        <a href="#">Pec Newsletter</a>
-                                        <a href="#">About</a>
-                                        <a href="#">Contact</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-
-            <!-- </div> -->
-            <!-- hamburger menu end mobile menu start -->
 
             <a data-toggle="collapse" href="#collapseMenu">
                 <div id="m_ham" style="background-color:transparent;border-radius: 4px;position: fixed;bottom: 20px; right: 30px;z-index:6" onclick="this.classList.toggle('change')">
-                    <div class="mbar1"></div>
-                    <div class="mbar2"></div>
-                    <div class="mbar3"></div>
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
                 </div>
             </a>
         </div>
@@ -171,7 +115,7 @@
 <div class="pec-menu collapse" id="collapseMenu">
     <div class="card-body">
         <div class="row">
-            <div class="col-lg-3 col-md-4 col-6" id="menu-col-1">
+            <div class="col-lg-3 col-6" id="menu-col-1">
                 <ul>
                     <li>IIS</li>
                     <li>Placement</li>
@@ -181,20 +125,21 @@
                     <li>Alumni</li>
                 </ul>
             </div>
-            <div class="col-lg-3 col-md-4 col-6" id="menu-col-2">
+            <div class="col-lg-3 col-6" id="menu-col-2">
                 <ul>
-                    <li onmouseover="menu('about')">About</li>
-                    <li onmouseover="menu('gallery')">Gallery</li>
-                    <li onmouseover="menu('oncampus')">On&nbsp;Campus<i class="material-icons" style="font-size:15px;margin-top:12px;float:right">navigate_next</i></li>
-                    <li onmouseover="menu('departments')">Departments<i class="material-icons" style="font-size:15px;margin-top:12px;float:right">navigate_next</i></li>
-                    <li onmouseover="menu('administration')">Administration</li>
-                    <li onmouseover="menu('teqip')">TEQIP</li>
+                    <li class="menu2" onmouseover="menu(this,'about')">About</li>
+                    <li class="menu2" onmouseover="menu(this,'gallery')">Gallery</li>
+                    <li class="menu2" onmouseover="menu(this,'oncampus')">On&nbsp;Campus<i class="material-icons" style="font-size:15px;margin-top:12px;float:right">navigate_next</i></li>
+                    <li class="menu2" onmouseover="menu(this,'departments')">Departments<i class="material-icons" style="font-size:15px;margin-top:12px;float:right">navigate_next</i></li>
+                    <li class="menu2" onmouseover="menu(this,'administration')">Administration</li>
+                    <li class="menu2" onmouseover="menu(this,'teqip')">TEQIP</li>
                 </ul>
             </div>
-            <div class="col-lg-3 col-md-4" id="menu-col-3">
+            <div id="menu2-cover"> <button onclick="goBack()" > <i class="material-icons">reply</i> </button> </div>
+            <div class="col-lg-3 col-6" id="menu-col-3">
                 <p style="font-size:18px;line-height:1.5">Pondicherry Engineering College (PEC) is an Institution sponsored by the Union Territory of Pondicherry, India. The College was started in 1984 under the VII Five Year Plan. It is an autonomous Institution for the purposes of administration, staff recruitment and College development and is managed by a Board of Governors.</p>
             </div>
-            <div class="col-lg-3" id="menu-col-4">
+            <div class="col-lg-3 col-6" id="menu-col-4">
                 <img src="college-img" alt="college-img">
             </div>
         </div>
