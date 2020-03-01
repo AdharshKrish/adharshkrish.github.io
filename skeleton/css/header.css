@@ -125,6 +125,7 @@
 
     .mob-btn{
         display: block;
+        opacity: .85;
     }
 }
 
