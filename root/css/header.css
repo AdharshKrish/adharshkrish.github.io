@@ -1,10 +1,12 @@
-*{
+header{
     padding:0;
     margin:0;
     text-decoration: none;
     box-sizing:border-box;
 }
 .container-dim{
+    /* margin-left:2%; */
+    /* padding:0 1.1vw; */
     width:100%;
     position: relative;
 }
@@ -15,19 +17,11 @@
     padding-top: 12px;
     padding-bottom: 12px;
     display:block;
-    /* margin-left: 15px; */
-    /* border: 1px solid red; */
     float:left;
 }
 .logo{
     width:50px;
 }
-/* #row-top-margin{
-    margin-top:0px;
-    margin-right:0;
-    margin-left:0;
-
-} */
 .college_name{
     float:left;
     font-family: 'Times New Roman';
@@ -74,9 +68,15 @@
     text-shadow:0 3px 6px rgba(0,0,0,0.16);
     margin-top: 0;
 }
-/* .search-box{
-    float:right;
-} */
+.pec-name{
+    float:left;
+    padding-left:1.5em;
+    margin-top:15px;
+    padding-top: 8px;
+    margin-bottom: 15px;
+    /* border-left:1px solid #707070; */
+
+}
 
 .search-box input[type=text]{
     /* width: 30px; */
@@ -93,26 +93,6 @@
 .search-bar{
     position: absolute;
 }
-
-/* .faculty-header{
-    border-top:3px double black;
-    border-bottom:3px double black;
-    font-family: 'Oswald',sans-serif;
-    
-    margin-left:3%;
-    margin-right:3%;
-    padding-top:0px;
-    padding-bottom:0px;
-}
-.faculty-header h4{
-    text-align: center;
-    font-family: 'Oswald',sans-serif;
-    font-weight:normal;
-    letter-spacing: normal;
-    font-style: normal;
-    line-height:normal;
-    font-size:36px;
-}    */
 
 .mob-btn{
     display: none;
