@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/main1.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
 
     <script src="../js/jquery.min.js"></script>    
     <script src="../js/materialize.min.js"></script>
@@ -46,6 +46,10 @@
         .fixed-action-btn ul li {
             margin-bottom: 3px;
         }
+        ul {
+            list-style-type: none;
+        }
+        
         body {
             display: flex;
             min-height: 100vh;        /*-------------------------------redundant line space here---------------------------------*/
@@ -281,7 +285,6 @@
 
     let link = window.location.href.slice(7);
     let crumbs = link.split('/');
-    console.log(crumbs);
     let a = 'http:/';
     crumbs.forEach((crumb,i)=>{
         a+='/'+crumb;
