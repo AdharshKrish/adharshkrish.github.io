@@ -32,6 +32,10 @@
     margin: 5px 0;
     transition: 0.4s;
 }
+.mob-btn .bar1,.mob-btn .bar2,.mob-btn .bar3{
+  height: 4px;
+  margin: 6px 0;
+}
   .change .bar1 {
     transform: rotate(-45deg) translate(-6px, 8px);
   }
