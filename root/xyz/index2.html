@@ -283,7 +283,9 @@
 
 <script>
 
-    let link = window.location.href.slice(7);
+    let link = window.location.href;
+    link = link.replace('http://','');
+    link = link.replace('https://','');
     let crumbs = link.split('/');
     let a = 'http:/';
     crumbs.forEach((crumb,i)=>{
