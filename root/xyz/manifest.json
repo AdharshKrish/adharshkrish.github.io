@@ -21,6 +21,11 @@
       "src": "../img/watermark.png",
       "type": "image/png",
       "sizes": "500x757"
+    },
+        {
+      "src": "../img/icons/splash.png",
+      "type": "image/png",
+      "sizes": "513x776"
     }
   ]
 }
