@@ -57,7 +57,7 @@
         
         body {
             display: flex;
-            min-height: 100vh;
+            min-height: 200vh;
             flex-direction: column;
         }
         
@@ -138,15 +138,15 @@
                 </div>
                 <!-- <div class="menu-nav"> -->
                 <a data-toggle="collapse" href="#collapseMenu">
-                    <div class="container" id="overlay" onclick="this.classList.toggle('change')">
+                    <div class="container menu-icon" id="overlay" onclick="change()">
                         <div class="bar1"></div>
                         <div class="bar2"></div>
                         <div class="bar3"></div>
                     </div>
                 </a>
                 <div class="mob-btn">
-                    <img src="../img/search.svg"data-toggle="collapse" href="#collapseSearch" onclick="window.scrollTo(0,0);setTimeout(()=>{document.getElementById('focus').focus();},0);" style="margin-bottom: 10px">
-                    <div data-toggle="collapse" href="#collapseMenu" onclick="window.scrollTo(0,0);this.classList.toggle('change')">
+                    <img src="../img/search.svg" data-toggle="collapse" href="#collapseSearch" onclick="focusS()" style="margin-bottom: 10px">
+                    <div data-toggle="collapse" class="menu-icon" href="#collapseMenu" onclick="window.scrollTo(0,0);change()">
                         <div class="bar1"></div>
                         <div class="bar2"></div>
                         <div class="bar3"></div>
@@ -223,9 +223,9 @@
                             <p class="pp">FAX (+91)0413-2655101 </p>
                             <p class="pp">E-Mail info@pec.edu</p>
                             <div class="social_icon">
-                                <a href="https://www.facebook.com/PEC.Pondicherry" target="_blank">
+                                <a href="https://www.facebook.com/PEC.Pondicherry" target="_blank" rel="noreferrer">
                                     <img src="../img/facebook-square-brands.svg" href=" " class="icons" height="36" width="36" alt=""></a>
-                                <a href="https://www.linkedin.com/school/pondicherry-engineering-college/" target="_blank">
+                                <a href="https://www.linkedin.com/school/pondicherry-engineering-college/" target="_blank" rel="noreferrer">
                                     <img src="../img/linkedin-brands.svg" class="icons" height="36" width="36" alt=""></a>
                             </div>
                         </div>

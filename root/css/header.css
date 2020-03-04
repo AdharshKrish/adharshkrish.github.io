@@ -132,10 +132,16 @@ header{
 .mob-btn{
     display: none;
 }
-
+#focus{
+    display:none;
+}
 @media screen and (max-width:985px){
     .search-box,#overlay{
         display:none;
+    }
+
+    #focus{
+        display:block;
     }
 
     .mob-btn{
@@ -154,8 +160,7 @@ header{
     }
     .dept-name{
         margin-left:0.3em;
-    }
-   
+    }  
 }
 
 

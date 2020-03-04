@@ -63,8 +63,18 @@ function menu1(elt,index)
         document.getElementById('menu-col-4').innerHTML='<ul id="chapter-font"><li>National Programme on Technology Enhanced Learning</li><li>Quality Enhancement in Engineering Education</li><li>Swayam</li></ul>';
     }
 }
+document.addEventListener('scroll',()=>{
+    if(window.outerWidth>980){
+        if(window.pageYOffset>100){
+            document.getElementsByClassName('mob-btn')[0].style.display='block';
+        }
+        else{
+            document.getElementsByClassName('mob-btn')[0].style.display='none';
 
-// document.getElementById('goback').addEventListener('click', goBack);
+        }
+    }
+});
+
 
 function goBack(){
     console.log('clicked');
@@ -73,4 +83,14 @@ function goBack(){
     document.getElementById('menu2-cover').style.display = 'none';
     document.getElementById('menu-col-3').style.display = 'none';
     document.getElementById('menu-col-4').style.display = 'none';
+}
+
+function change(){
+    document.getElementsByClassName('menu-icon')[0].classList.toggle('change')
+    document.getElementsByClassName('menu-icon')[1].classList.toggle('change')
+}
+
+function focusS(){
+    window.scrollTo(0,0);setTimeout(()=>{document.getElementById('focus').focus();},0);
+    document.getElementById('focusChk').focus();
 }
