@@ -2,7 +2,7 @@
   "name": "Pondicherry Engineering College",
   "short_name": "PEC.edu",
   "start_url": "index.html",
-  "display": "minimal-ui",
+  "display": "standalone",
   "background_color": "#ebf3f4",
   "theme_color": "#2e8690",
   "orientation": "portrait-primary",
