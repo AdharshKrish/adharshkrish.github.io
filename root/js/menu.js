@@ -6,11 +6,10 @@ function menu(elt,item)
         document.getElementById('menu2-cover').style.display = 'block';
         document.getElementById('menu-col-3').style.display = 'block';
         document.getElementById('menu-col-4').style.display = 'block';
+        document.getElementById('menu-col-4').style.left='50%';
     }
     document.getElementById('menu-col-3').classList.replace('col-4','col-6');
     document.getElementById('menu-col-4').classList.replace('col-8','col-6');
-    if(window.outerWidth<996)
-        document.getElementById('menu-col-4').style.left='50%';
     document.getElementById('menu-col-3').style.borderRight='none';
 
     var m2 = document.getElementsByClassName("menu2");
@@ -34,14 +33,11 @@ function menu(elt,item)
         document.getElementById('menu-col-4').innerHTML='';
     }
     else if(item==='departments'){
-        // document.getElementById('menu-col-3').classList.replace('col-lg-3','col-lg-6');
-        // document.getElementById('menu-col-3').classList.replace('col-6','col-7');
-        // document.getElementById('menu-col-4').classList.replace('col-6','col-5');
         document.getElementById('menu-col-3').innerHTML='<ul><li>Chemical Engineering</li><li>Chemistry</li><li>Civil Engineering</li><li>Computer Science and Engineering</li><li>Electronics and Communication Engineering</li></ul>';
         document.getElementById('menu-col-4').innerHTML='<ul><li>Electronics and Instrumentation Engineering</li><li>Humanities and Social Sciences</li><li>Information Technology</li><li>Mathematics</li><li>Mechanical Engineering</li><li>Physics</li></ul>';
     }
     else{
-        document.getElementById('menu-col-3').innerHTML='<p style="font-size:18px;line-height:1.5;text-align: justify;">Pondicherry Engineering College (PEC) is an Institution sponsored by the Union Territory of Pondicherry, India. The College was started in 1984 under the VII Five Year Plan. It is an autonomous Institution for the purposes of administration, staff recruitment and College development and is managed by a Board of Governors. <a href="http://www.pec.edu">Read more..</a></p>';
+        document.getElementById('menu-col-3').innerHTML='<p class="menu-about">Pondicherry Engineering College (PEC) is an Institution sponsored by the Union Territory of Pondicherry, India. The College was started in 1984 under the VII Five Year Plan. It is an autonomous Institution for the purposes of administration, staff recruitment and College development and is managed by a Board of Governors. <a href="http://www.pec.edu">Read more..</a></p>';
         document.getElementById('menu-col-4').innerHTML='<img src="../img/about.jpg" alt="college-img" style="width:18vw">';
     }
 }
@@ -72,12 +68,24 @@ document.addEventListener('scroll',()=>{
             document.getElementsByClassName('mob-btn')[0].style.display='none';
 
         }
+    }else{
+        document.getElementsByClassName('mob-btn')[0].style.display='block';
     }
 });
 
+$(window).resize(function() {
+        // window.setTimeout(()=>{location.reload()},1500);
+        if(window.outerWidth>996){
+            document.getElementById('menu-col-1').style.display = 'block';
+            document.getElementById('menu-col-2').style.display = 'block';
+            document.getElementById('menu2-cover').style.display = 'none';
+            document.getElementById('menu-col-3').innerHTML='';
+            document.getElementById('menu-col-4').innerHTML='';
+            document.getElementById('menu-col-4').style.left='0';
+        }
+});
 
 function goBack(){
-    console.log('clicked');
     document.getElementById('menu-col-1').style.display = 'block';
     document.getElementById('menu-col-2').style.display = 'block';
     document.getElementById('menu2-cover').style.display = 'none';

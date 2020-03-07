@@ -61,6 +61,7 @@
     font-size: 20px;
     /* border-top: 3px solid #2e8690; */
     border-bottom: 3px solid #2e8690;
+    background-color: #fff;
 }
 .menu2{
     text-decoration: none;
@@ -69,6 +70,13 @@
 .active-m2{
     text-decoration:underline;
     color:#2e8690;
+}
+
+.nav-btn-img{
+  width:100%;transform:rotate(-90deg)
+}
+.menu-about{
+  font-size:18px;line-height:1.5;text-align: justify;
 }
 
 #menu-col-1{
@@ -93,7 +101,6 @@
 
 }
 
-
 #menu2-cover{
   background-color:#fff;
   display:none;
@@ -102,6 +109,8 @@
   position: relative;
   z-index: 2;
 }
+
+
 #menu2-cover button{
   position:absolute;
   bottom:0;
@@ -148,7 +157,7 @@
   }
 }
 
-@media(max-width:615px){
+@media(max-width:650px){
   #menu-col-1,#menu-col-2,#menu-col-3,#menu-col-4 {
     padding-left:5vw;
     line-height: 30px;
@@ -161,5 +170,20 @@
   }
   #menu-col-4{
     display: none;
+  }
+  .menu-about{
+    font-size:14px;
+  }
+}
+
+@media(max-width:450px){
+  #menu-col-3 ul, #menu-col-4 ul{
+    padding-left:10px;
+  }
+  #menu-col-3{
+    padding:0px;
+  }
+  .menu-about{
+    font-size:12px;
   }
 }
