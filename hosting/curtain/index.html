@@ -453,7 +453,7 @@ clickButton = () => {
       button.classList.remove('loading')
       setTimeout(() => {
         slide();
-        let i = 650;
+        let i = window.innerWidth/2;
         let to = true;
         setInterval(function(){
             doItNow(i,false)
@@ -463,9 +463,9 @@ clickButton = () => {
             }else{
                 i-=20;
             }
-            if(i>1000)
+            if(i>window.innerWidth/2+window.innerWidth/4)
                 to=false;
-            else if(i<400)
+            else if(i<window.innerWidth/4)
                 to=true;
         }, 100);
         button.style.display="none";
